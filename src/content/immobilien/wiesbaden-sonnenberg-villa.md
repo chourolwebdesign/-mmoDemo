@@ -33,15 +33,15 @@ energieausweis:
   baujahr: 1998
   gueltigBis: "2033-04-30"
 bilder:
-  - src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-sonnenberg-villa/1.svg"
     alt: "Straßenansicht des freistehenden Einfamilienhauses in Wiesbaden-Sonnenberg"
-  - src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-sonnenberg-villa/2.svg"
     alt: "Wohnzimmer mit Kamin, Erdgeschoss"
-  - src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-sonnenberg-villa/3.svg"
     alt: "Offene Wohnküche mit Einbauküche"
-  - src: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-sonnenberg-villa/4.svg"
     alt: "Terrasse und Garten, Südwestausrichtung"
-  - src: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-sonnenberg-villa/5.svg"
     alt: "Schlafzimmer im Obergeschoss"
 lat: 50.0847
 lng: 8.2778

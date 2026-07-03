@@ -33,13 +33,13 @@ energieausweis:
   baujahr: 2006
   gueltigBis: "2034-02-28"
 bilder:
-  - src: "https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/eltville-villa/1.svg"
     alt: "Außenansicht der Villa mit Weinbergblick"
-  - src: "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/eltville-villa/2.svg"
     alt: "Wohnbereich mit großzügiger Fensterfront"
-  - src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/eltville-villa/3.svg"
     alt: "Pool und Terrasse im Garten"
-  - src: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/eltville-villa/4.svg"
     alt: "Ansicht des Anwesens von der Zufahrt"
 lat: 50.0290
 lng: 8.1198

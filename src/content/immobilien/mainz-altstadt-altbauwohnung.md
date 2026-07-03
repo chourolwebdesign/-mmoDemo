@@ -30,11 +30,11 @@ energieausweis:
   baujahr: 1904
   gueltigBis: "2031-06-30"
 bilder:
-  - src: "https://images.unsplash.com/photo-1571939228382-b2f2b585ce15?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/mainz-altstadt-altbauwohnung/1.svg"
     alt: "Fassade des Altbaus in der Mainzer Altstadt"
-  - src: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/mainz-altstadt-altbauwohnung/2.svg"
     alt: "Wohnzimmer mit Stuckdecke und Dielenboden"
-  - src: "https://images.unsplash.com/photo-1524749292158-7540c2494485?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/mainz-altstadt-altbauwohnung/3.svg"
     alt: "Sanierte Einbauküche"
 lat: 49.9985
 lng: 8.2740

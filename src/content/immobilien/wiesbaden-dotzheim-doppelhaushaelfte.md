@@ -19,7 +19,7 @@ lage: >
   Familienfreundliche Wohnlage in Dotzheim, Schulen und Kindergärten fußläufig,
   gute Anbindung an die Innenstadt und die A66.
 bilder:
-  - src: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-dotzheim-doppelhaushaelfte/1.svg"
     alt: "Außenansicht der verkauften Doppelhaushälfte in Wiesbaden-Dotzheim"
 lat: 50.0774
 lng: 8.2020

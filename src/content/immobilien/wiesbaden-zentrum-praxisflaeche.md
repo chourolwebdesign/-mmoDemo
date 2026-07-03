@@ -22,11 +22,11 @@ lage: >
   Kanzleien, Praxen oder Beratungsunternehmen. Sehr gute Anbindung an ÖPNV und
   öffentliche Parkhäuser in unmittelbarer Nähe.
 bilder:
-  - src: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-zentrum-praxisflaeche/1.svg"
     alt: "Büro-/Praxisfläche mit Empfangsbereich"
-  - src: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-zentrum-praxisflaeche/2.svg"
     alt: "Konferenzraum der Gewerbefläche"
-  - src: "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-zentrum-praxisflaeche/3.svg"
     alt: "Fassade des Bürogebäudes im Zentrum von Wiesbaden"
 lat: 50.0826
 lng: 8.2400

@@ -19,9 +19,9 @@ lage: >
   Naherholungsgebiet und Wald in wenigen Gehminuten, Anbindung an die B275 sowie
   Bushaltestelle in der Nähe.
 bilder:
-  - src: "https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/taunusstein-baugrundstueck/1.svg"
     alt: "Unbebautes Baugrundstück in Taunusstein-Wehen"
-  - src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/taunusstein-baugrundstueck/2.svg"
     alt: "Blick über das Grundstück Richtung Wald"
 lat: 50.1494
 lng: 8.1553

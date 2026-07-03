@@ -32,11 +32,11 @@ energieausweis:
   baujahr: 1965
   gueltigBis: "2030-09-30"
 bilder:
-  - src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/ruedesheim-renditeobjekt/1.svg"
     alt: "Fassade des Mehrfamilienhauses in Rüdesheim"
-  - src: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/ruedesheim-renditeobjekt/2.svg"
     alt: "Treppenhaus des Mehrfamilienhauses"
-  - src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/ruedesheim-renditeobjekt/3.svg"
     alt: "Beispielwohnung im Mehrfamilienhaus"
 lat: 49.9786
 lng: 7.9280

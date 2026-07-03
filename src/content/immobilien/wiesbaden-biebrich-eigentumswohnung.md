@@ -31,13 +31,13 @@ energieausweis:
   baujahr: 2011
   gueltigBis: "2032-11-30"
 bilder:
-  - src: "https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-biebrich-eigentumswohnung/1.svg"
     alt: "Wohnzimmer der Eigentumswohnung mit Blick zum Balkon"
-  - src: "https://images.unsplash.com/photo-1449844908441-8829872d2607?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-biebrich-eigentumswohnung/2.svg"
     alt: "Offene Küche im Wohnbereich"
-  - src: "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-biebrich-eigentumswohnung/3.svg"
     alt: "Schlafzimmer mit Blick ins Grüne"
-  - src: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1600&q=80"
+  - src: "/images/listings/wiesbaden-biebrich-eigentumswohnung/4.svg"
     alt: "Außenansicht des Wohngebäudes in Biebrich"
 lat: 50.0669
 lng: 8.2236
