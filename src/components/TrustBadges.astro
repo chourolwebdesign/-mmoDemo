@@ -1,0 +1,42 @@
+---
+import { site } from "../data/site";
+
+const memberships = [
+  "Mitglied im Immobilienverband Deutschland (IVD)",
+  "DEKRA-zertifizierte Sachverständige für Immobilienbewertung",
+  "DIN EN 15733 zertifiziert",
+  "Öffentlich bestellte Sachverständige, Gutachterausschuss Wiesbaden",
+];
+---
+
+<section class="border-y border-line bg-white">
+  <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[auto_1fr] lg:items-center">
+    <img
+      src="/agent-portrait.svg"
+      alt={`Porträt von ${site.owner}`}
+      width="180"
+      height="180"
+      class="h-44 w-44 rounded-full border border-line object-cover"
+    />
+    <div>
+      <p class="eyebrow">Warum {site.name}</p>
+      <h2 class="mt-2 font-display text-3xl text-ink">
+        Seit {site.foundedYear} persönlich vor Ort — {site.owner}
+      </h2>
+      <p class="mt-4 max-w-2xl text-slate leading-relaxed">
+        Als {site.ownerTitle.toLowerCase()} kenne ich den Immobilienmarkt in
+        Wiesbaden und im Rheingau aus über 27 Jahren täglicher Praxis. Jede
+        Immobilie erhält die Zeit, die sie braucht — von der ersten Wertermittlung
+        bis zur Schlüsselübergabe.
+      </p>
+      <ul class="mt-5 grid gap-2 sm:grid-cols-2">
+        {memberships.map((m) => (
+          <li class="flex items-start gap-2 text-sm text-ink">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brass"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            {m}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,90 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import MapsConsent from "../../components/MapsConsent.astro";
+import { site } from "../../data/site";
+---
+
+<Layout
+  title={`Kontakt | ${site.name}`}
+  description={`Kontaktieren Sie ${site.name} in Wiesbaden — telefonisch, per E-Mail, WhatsApp oder über unser Kontaktformular.`}
+>
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <p class="eyebrow">Kontakt</p>
+    <h1 class="mt-1 font-display text-4xl text-ink">Wir freuen uns auf Ihre Nachricht</h1>
+
+    <div class="mt-10 grid gap-10 lg:grid-cols-[380px_1fr]">
+      <div class="space-y-6">
+        <div class="rounded-2xl border border-line bg-white p-6">
+          <p class="font-display text-lg text-ink">{site.name}</p>
+          <p class="mt-1 text-sm text-slate">{site.ownerTitle}</p>
+          <dl class="mt-4 space-y-2 text-sm">
+            <div>
+              <dt class="text-slate">Adresse</dt>
+              <dd class="font-medium text-ink">{site.street}, {site.zip} {site.city}</dd>
+            </div>
+            <div>
+              <dt class="text-slate">Telefon</dt>
+              <dd><a href={`tel:${site.phone.replace(/\s/g, "")}`} class="font-medium text-ink hover:text-brass">{site.phoneDisplay}</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate">E-Mail</dt>
+              <dd><a href={`mailto:${site.email}`} class="font-medium text-ink hover:text-brass">{site.email}</a></dd>
+            </div>
+            <div>
+              <dt class="text-slate">Öffnungszeiten</dt>
+              <dd class="font-medium text-ink">{site.hours}</dd>
+            </div>
+          </dl>
+          <a
+            href={`https://wa.me/${site.whatsapp}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mt-5 inline-flex w-full items-center justify-center rounded-full border border-line px-4 py-2.5 text-sm font-medium text-ink transition hover:border-brass hover:text-brass"
+          >
+            Per WhatsApp schreiben
+          </a>
+        </div>
+        <MapsConsent ort={site.city} plz={site.zip} />
+      </div>
+
+      <div class="rounded-2xl border border-line bg-white p-6 sm:p-8">
+        <h2 class="font-display text-2xl text-ink">Nachricht senden</h2>
+        <form id="kontakt-form" class="mt-6 grid gap-4 sm:grid-cols-2">
+          <input type="text" name="_honeypot" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <div class="flex flex-col gap-1">
+            <label for="k-name" class="text-sm font-medium text-ink">Name*</label>
+            <input id="k-name" name="Name" type="text" required class="rounded-lg border border-line px-3 py-2 text-sm" />
+          </div>
+          <div class="flex flex-col gap-1">
+            <label for="k-email" class="text-sm font-medium text-ink">E-Mail*</label>
+            <input id="k-email" name="E-Mail" type="email" required class="rounded-lg border border-line px-3 py-2 text-sm" />
+          </div>
+          <div class="flex flex-col gap-1 sm:col-span-2">
+            <label for="k-telefon" class="text-sm font-medium text-ink">Telefon</label>
+            <input id="k-telefon" name="Telefon" type="tel" class="rounded-lg border border-line px-3 py-2 text-sm" />
+          </div>
+          <div class="flex flex-col gap-1 sm:col-span-2">
+            <label for="k-nachricht" class="text-sm font-medium text-ink">Nachricht*</label>
+            <textarea id="k-nachricht" name="Nachricht" required rows="5" class="rounded-lg border border-line px-3 py-2 text-sm"></textarea>
+          </div>
+          <label class="flex items-start gap-2 text-sm text-ink sm:col-span-2">
+            <input type="checkbox" name="Datenschutz akzeptiert" value="Ja" required class="mt-0.5 h-4 w-4 rounded border-line" />
+            <span>Ich habe die <a href="/datenschutz/" class="underline hover:text-brass">Datenschutzerklärung</a> zur Kenntnis genommen.*</span>
+          </label>
+          <div data-form-status class="hidden sm:col-span-2" aria-live="polite"></div>
+          <div class="sm:col-span-2">
+            <button type="submit" class="rounded-full bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-brass">
+              Nachricht senden
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  import { wireForm } from "../../lib/form-handler";
+  wireForm("kontakt-form", "Neue Kontaktanfrage");
+</script>
