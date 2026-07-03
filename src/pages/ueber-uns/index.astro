@@ -1,0 +1,70 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CTABand from "../../components/CTABand.astro";
+import { site } from "../../data/site";
+
+const memberships = [
+  "Mitglied im Immobilienverband Deutschland (IVD)",
+  "DEKRA-zertifizierte Sachverständige für Immobilienbewertung",
+  "DIN EN 15733 zertifiziert",
+  "Öffentlich bestellte Sachverständige, Gutachterausschuss Wiesbaden",
+  "Erlaubnis nach § 34c GewO",
+];
+---
+
+<Layout
+  title={`Über uns | ${site.name}`}
+  description={`${site.owner} ist seit ${site.foundedYear} Immobilienmaklerin in Wiesbaden. Lernen Sie ${site.name} und unsere Arbeitsweise kennen.`}
+>
+  <section class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[380px_1fr] lg:items-start">
+    <img
+      src="/agent-portrait.svg"
+      alt={`Porträt von ${site.owner}`}
+      width="380"
+      height="460"
+      class="w-full rounded-2xl border border-line object-cover"
+    />
+    <div>
+      <p class="eyebrow">Über uns</p>
+      <h1 class="mt-1 font-display text-4xl text-ink">{site.owner}</h1>
+      <p class="mt-1 text-slate">{site.ownerTitle}</p>
+
+      <div class="mt-6 space-y-4 text-slate leading-relaxed">
+        <p>
+          Seit {site.foundedYear} vermittle ich Immobilien in Wiesbaden und dem
+          Rheingau — anfangs an der Seite meines Vaters, heute in zweiter
+          Generation als eigenständiges Maklerbüro. Was sich in all den Jahren
+          nicht geändert hat: die persönliche Betreuung jedes einzelnen Objekts.
+        </p>
+        <p>
+          Der Immobilienmarkt ist komplexer geworden — Energieausweise,
+          Bewertungsverfahren und rechtliche Anforderungen verändern sich
+          laufend. Regelmäßige Fortbildungen und die Mitgliedschaft im
+          Gutachterausschuss halten mich auf dem aktuellen Stand, damit Sie sich
+          auf eine fundierte Einschätzung verlassen können.
+        </p>
+        <p>
+          Ob Verkauf, Vermietung oder Suche: Ich nehme mir für jede Immobilie die
+          Zeit, die sie verdient, und begleite Sie persönlich bis zum
+          Notartermin und darüber hinaus.
+        </p>
+      </div>
+
+      <ul class="mt-8 grid gap-2 sm:grid-cols-2">
+        {memberships.map((m) => (
+          <li class="flex items-start gap-2 rounded-lg bg-white p-3 text-sm text-ink ring-1 ring-line">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brass"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            {m}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <CTABand
+    title="Lernen wir uns kennen."
+    text="Ob Kauf, Verkauf oder Suchauftrag — rufen Sie an oder schreiben Sie mir direkt."
+    ctaLabel="Kontakt aufnehmen"
+    ctaHref="/kontakt/"
+  />
+</Layout>

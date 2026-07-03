@@ -1,0 +1,105 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import Hero from "../components/Hero.astro";
+import ServiceCards from "../components/ServiceCards.astro";
+import PropertyGrid from "../components/PropertyGrid.astro";
+import TrustBadges from "../components/TrustBadges.astro";
+import CounterStats from "../components/CounterStats.astro";
+import TestimonialStrip from "../components/TestimonialStrip.astro";
+import GesucheBoard from "../components/GesucheBoard.astro";
+import ProcessSteps from "../components/ProcessSteps.astro";
+import PropertyCard from "../components/PropertyCard.astro";
+import CTABand from "../components/CTABand.astro";
+import { site } from "../data/site";
+
+const allListings = await getCollection("immobilien");
+
+const aktiv = allListings
+  .filter((e) => e.data.status === "aktiv" || e.data.status === "reserviert")
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured));
+
+const verkauft = allListings.filter((e) => e.data.status === "verkauft" || e.data.status === "vermietet");
+
+const featuredListings = aktiv.slice(0, 6);
+---
+
+<Layout
+  title={`Immobilienmakler Wiesbaden | ${site.name}`}
+  description={`${site.name} ist Immobilienmaklerin in Wiesbaden und vermittelt Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien im Rhein-Main-Gebiet und Rheingau.`}
+>
+  <Hero />
+
+  <ServiceCards />
+
+  <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+    <div class="mb-8 flex flex-wrap items-end justify-between gap-4">
+      <div>
+        <p class="eyebrow">Aktuelle Immobilien</p>
+        <h2 class="mt-1 font-display text-3xl text-ink">Ausgewählte Angebote</h2>
+      </div>
+      <a href="/immobilien/" class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition hover:border-brass hover:text-brass-dark">
+        Alle Immobilien ansehen
+      </a>
+    </div>
+    <PropertyGrid entries={featuredListings} />
+  </section>
+
+  <TrustBadges />
+
+  <CounterStats />
+
+  <TestimonialStrip />
+
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <div class="rounded-3xl bg-brass-soft/40 p-6 sm:p-10">
+      <div class="flex flex-wrap items-end justify-between gap-4">
+        <div>
+          <p class="eyebrow">Kundengesuche</p>
+          <h2 class="mt-1 font-display text-3xl text-ink">Diese Käufer warten bereits</h2>
+          <p class="mt-2 max-w-xl text-sm text-slate">
+            Ein Auszug aus unserer aktuellen Suchkartei — anonymisiert. Bevor ein
+            Objekt öffentlich inseriert wird, prüfen wir zuerst passende Gesuche.
+          </p>
+        </div>
+        <a href="/suchauftrag/" class="rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brass">
+          Alle Gesuche ansehen
+        </a>
+      </div>
+      <div class="mt-6">
+        <GesucheBoard teaser />
+      </div>
+      <p class="mt-6 text-sm text-ink">
+        Sie besitzen eine passende Immobilie?
+        <a href="/verkaufen/" class="font-medium underline decoration-brass underline-offset-2 hover:text-brass-dark">
+          Jetzt kostenlos bewerten lassen →
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+    <p class="eyebrow">So läuft Ihr Verkauf ab</p>
+    <h2 class="mt-1 font-display text-3xl text-ink">Vier Schritte bis zum Notartermin</h2>
+    <div class="mt-8">
+      <ProcessSteps />
+    </div>
+  </section>
+
+  {verkauft.length > 0 && (
+    <section class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+      <p class="eyebrow">Referenzen</p>
+      <h2 class="mt-1 font-display text-3xl text-ink">Kürzlich vermittelt</h2>
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {verkauft.slice(0, 3).map((entry) => <PropertyCard entry={entry} />)}
+      </div>
+    </section>
+  )}
+
+  <CTABand
+    title="Was ist Ihre Immobilie wert?"
+    text="In einem unverbindlichen Erstgespräch ermitteln wir gemeinsam den realistischen Marktwert Ihrer Immobilie."
+    ctaLabel="Kostenlose Bewertung anfragen"
+    ctaHref="/verkaufen/"
+  />
+</Layout>

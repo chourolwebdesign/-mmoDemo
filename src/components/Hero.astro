@@ -1,0 +1,43 @@
+---
+import SearchCard from "./SearchCard.astro";
+---
+
+<section class="relative">
+  <div class="relative h-[78vh] min-h-[560px] w-full overflow-hidden">
+    <img
+      src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=2000&q=80"
+      alt="Villa mit Weinbergblick im Rheingau"
+      class="h-full w-full object-cover"
+      fetchpriority="high"
+    />
+    <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-ink/25 to-ink/10"></div>
+
+    <div class="absolute inset-0 flex items-center">
+      <div class="mx-auto w-full max-w-6xl px-4 sm:px-6">
+        <div class="max-w-2xl">
+          <p class="eyebrow text-brass-soft">Immobilienmaklerin in Wiesbaden &amp; Rheingau</p>
+          <h1 class="mt-3 font-display text-4xl leading-[1.05] text-white sm:text-5xl lg:text-6xl">
+            Immobilien <em class="not-italic font-normal italic">für Wiesbaden</em> und den Rheingau
+          </h1>
+          <p class="mt-5 max-w-lg text-base text-white/85 sm:text-lg">
+            Seit 1998 begleiten wir Käufer, Verkäufer und Eigentümer mit lokaler
+            Marktkenntnis, einer gepflegten Käuferkartei und persönlicher Beratung
+            von Anfang bis zum Notartermin.
+          </p>
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="/verkaufen/" class="rounded-full bg-brass px-6 py-3 text-sm font-semibold text-ink transition hover:bg-white">
+              Immobilie bewerten lassen
+            </a>
+            <a href="/immobilien/" class="rounded-full border border-white/50 px-6 py-3 text-sm font-medium text-white transition hover:border-white hover:bg-white/10">
+              Aktuelle Angebote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mx-auto -mt-10 max-w-4xl px-4 sm:-mt-12 sm:px-6">
+    <SearchCard />
+  </div>
+</section>

@@ -1,0 +1,105 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { site } from "../../data/site";
+---
+
+<Layout title={`Datenschutz | ${site.name}`} description="Datenschutzerklärung." noindex>
+  <section class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+    <h1 class="font-display text-4xl text-ink">Datenschutzerklärung</h1>
+
+    <div class="mt-8 space-y-8 text-sm leading-relaxed text-slate">
+      <div class="rounded-xl border border-dashed border-brass-dark/50 bg-brass-soft/30 p-4">
+        <p class="font-medium text-ink">[RECHTLICH PRÜFEN]</p>
+        <p class="mt-2">
+          Diese Datenschutzerklärung ist ein Platzhaltertext auf Basis gängiger
+          Musterformulierungen. Sie ersetzt keine rechtliche Prüfung und muss vor
+          Veröffentlichung von einer fachkundigen Stelle (Rechtsanwalt/-anwältin
+          oder Datenschutzbeauftragte:r) freigegeben werden — insbesondere die
+          Abschnitte zu eingesetzten Diensten (Formularversand, Hosting, ggf.
+          Analyse-Tools) und die Widerrufsbelehrung zur Maklertätigkeit.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">1. Verantwortlicher</h2>
+        <p class="mt-2">
+          {site.name}, {site.owner}<br />
+          {site.street}, {site.zip} {site.city}<br />
+          E-Mail: {site.email} · Telefon: {site.phoneDisplay}
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">2. Hosting</h2>
+        <p class="mt-2">
+          Diese Website wird bei einem externen Dienstleister gehostet
+          (Vercel Inc., 340 S Lemon Ave #4133, Walnut, CA 91789, USA). Beim
+          Aufruf der Website werden automatisch Server-Logfiles (u. a.
+          IP-Adresse, Datum/Uhrzeit, aufgerufene Seite) verarbeitet, um den
+          sicheren und stabilen Betrieb der Website zu gewährleisten
+          (Art. 6 Abs. 1 lit. f DSGVO).
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">3. Kontakt- und Anfrageformulare</h2>
+        <p class="mt-2">
+          Wenn Sie uns über ein Formular (z. B. Direktanfrage, Bewertungs- oder
+          Suchauftragsformular) kontaktieren, verarbeiten wir die von Ihnen
+          angegebenen Daten (u. a. Name, E-Mail, Telefon, Nachricht) zur
+          Bearbeitung Ihrer Anfrage sowie für den Fall von Anschlussfragen
+          (Art. 6 Abs. 1 lit. b DSGVO). Die Übermittlung erfolgt über einen
+          externen Formularverarbeitungsdienst; die Daten werden verschlüsselt
+          per E-Mail an uns weitergeleitet.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">4. Google Maps</h2>
+        <p class="mt-2">
+          Auf einigen Seiten binden wir nach Ihrer ausdrücklichen Zustimmung
+          (Zwei-Klick-Lösung) Kartenmaterial von Google Maps ein, ein Dienst der
+          Google LLC bzw. Google Ireland Limited. Erst mit Klick auf „Google
+          Maps Karte anzeigen" wird eine Verbindung zu Google-Servern
+          hergestellt und Daten (u. a. Ihre IP-Adresse) übertragen
+          (Art. 6 Abs. 1 lit. a DSGVO). Weitere Informationen:
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="underline hover:text-ink"> Datenschutzerklärung von Google</a>.
+          Ihre Zustimmung können Sie jederzeit über die Cookie-Einstellungen
+          widerrufen.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">5. Cookies</h2>
+        <p class="mt-2">
+          Wir verwenden technisch notwendige Cookies für den Betrieb der
+          Website sowie ein Local-Storage-Flag zur Speicherung Ihrer
+          Cookie-Entscheidung. Optionale Inhalte (Google Maps) werden erst
+          nach Ihrer Zustimmung geladen.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">6. Widerrufsbelehrung zur Maklertätigkeit</h2>
+        <p class="mt-2">
+          Sofern Sie als Verbraucher:in im Sinne des § 13 BGB im Wege des
+          Fernabsatzes einen Maklervertrag mit uns schließen, steht Ihnen ein
+          gesetzliches Widerrufsrecht zu. [RECHTLICH PRÜFEN: vollständige
+          Widerrufsbelehrung inkl. Musterwiderrufsformular und Fristbeginn
+          durch fachkundige Stelle ergänzen lassen.]
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">7. Ihre Rechte</h2>
+        <p class="mt-2">
+          Sie haben das Recht auf Auskunft, Berichtigung, Löschung,
+          Einschränkung der Verarbeitung, Datenübertragbarkeit sowie
+          Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten.
+          Zudem steht Ihnen ein Beschwerderecht bei einer Datenschutz-
+          Aufsichtsbehörde zu.
+        </p>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,32 @@
+{
+  "haeuser": [
+    { "id": "G-101", "text": "Einfamilienhaus mit Garten, Wiesbaden-Sonnenberg oder Frauenstein, bis € 750.000,-" },
+    { "id": "G-102", "text": "Doppelhaushälfte, Umkreis 10 km Wiesbaden, bis € 550.000,-" },
+    { "id": "G-103", "text": "Reihenendhaus mit mind. 4 Zimmern, Taunusstein oder Bad Schwalbach, bis € 480.000,-" },
+    { "id": "G-104", "text": "Freistehendes Haus mit Einliegerwohnung, Rheingau, bis € 890.000,-" },
+    { "id": "G-105", "text": "Bungalow, barrierefrei, Wiesbaden oder Mainz, bis € 620.000,-" },
+    { "id": "G-106", "text": "Fachwerkhaus mit Sanierungsbedarf, Rheingau oder Untertaunus, bis € 400.000,-" },
+    { "id": "G-107", "text": "Villa mit Weinbergblick, Eltville oder Oestrich-Winkel, bis € 2.000.000,-" },
+    { "id": "G-108", "text": "Einfamilienhaus mit großem Grundstück für Pferdehaltung, Umland Wiesbaden, bis € 900.000,-" }
+  ],
+  "eigentumswohnungen": [
+    { "id": "G-201", "text": "3-Zimmer-Wohnung mit Balkon, Wiesbaden-Zentrum oder Biebrich, bis € 420.000,-" },
+    { "id": "G-202", "text": "Altbauwohnung mit Stuck und Dielenboden, Mainz-Altstadt oder Neustadt, bis € 380.000,-" },
+    { "id": "G-203", "text": "Barrierefreie 2-Zimmer-Wohnung mit Aufzug, Wiesbaden, bis € 320.000,-" },
+    { "id": "G-204", "text": "Penthouse mit Dachterrasse, Wiesbaden oder Mainz, bis € 950.000,-" },
+    { "id": "G-205", "text": "Kapitalanlage-Wohnung, vermietet, Wiesbaden oder Rheingau, bis € 300.000,-" }
+  ],
+  "grundstuecke": [
+    { "id": "G-301", "text": "Baugrundstück für Einfamilienhaus, Taunusstein oder Bad Schwalbach, bis € 350.000,-" },
+    { "id": "G-302", "text": "Grundstück für Doppelhaus, Wiesbaden-Umland, bis € 420.000,-" },
+    { "id": "G-303", "text": "Weinberg-Parzelle oder Streuobstwiese, Rheingau, bis € 60.000,-" },
+    { "id": "G-304", "text": "Baugrundstück ab 800 m², Idstein oder Niedernhausen, bis € 300.000,-" }
+  ],
+  "gewerbeSonstige": [
+    { "id": "G-401", "text": "Büro- oder Praxisfläche, ca. 120–180 m², Wiesbaden-Zentrum, Miete bis € 2.800,-" },
+    { "id": "G-402", "text": "Ladenlokal in Fußgängerzone, Wiesbaden oder Mainz, Miete auf Anfrage" },
+    { "id": "G-403", "text": "Mehrfamilienhaus als Renditeobjekt, Rhein-Main, bis € 1.800.000,-" },
+    { "id": "G-404", "text": "Lager-/Hallenfläche mit LKW-Zufahrt, Wiesbaden-Umland, ca. 400–600 m²" },
+    { "id": "G-405", "text": "Gastronomiefläche mit Außenbereich, Rheinufer Rüdesheim oder Eltville, Kauf oder Pacht" }
+  ]
+}
