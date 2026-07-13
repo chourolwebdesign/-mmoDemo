@@ -11,7 +11,7 @@ interface Props {
 
 const { title, description, image, noindex = false, jsonLd = [] } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, site.siteUrl);
-const ogImage = image ?? `${site.siteUrl}/images/site/og-image.png`;
+const ogImage = image ?? `${site.siteUrl}/images/site/og-image.jpg`;
 
 const organizationJsonLd = {
   "@context": "https://schema.org",

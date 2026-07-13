@@ -1,6 +1,5 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import path from "node:path";
-import sharp from "sharp";
 
 const ROOT = path.resolve(import.meta.dirname, "..");
 const LISTINGS_DIR = path.join(ROOT, "public/images/listings");
@@ -254,7 +253,10 @@ async function main() {
 
   await mkdir(SITE_DIR, { recursive: true });
 
-  await writeFile(path.join(SITE_DIR, "hero.svg"), heroScene(), "utf-8");
+  // hero.jpg and og-image.jpg are real photographs supplied by the client —
+  // never regenerated here. heroScene() remains available as a fallback:
+  // await writeFile(path.join(SITE_DIR, "hero.svg"), heroScene(), "utf-8");
+  void heroScene;
 
   const verkaufenSvg = svgPlaceholder({
     label: "Ihre Immobilie verdient den besten Preis",
@@ -274,16 +276,7 @@ async function main() {
   });
   await writeFile(path.join(SITE_DIR, "interieur.svg"), interieurSvg, "utf-8");
 
-  const ogSvg = svgPlaceholder({
-    label: "SIM Immobilien Service GmbH — Montabaur & Westerwald",
-    index: 2,
-    width: 1200,
-    height: 630,
-    icon: "exterior",
-  });
-  await sharp(Buffer.from(ogSvg)).png().toFile(path.join(SITE_DIR, "og-image.png"));
-
-  console.log("✓ site: hero.svg, verkaufen-hero.svg, og-image.png");
+  console.log("✓ site: verkaufen-hero.svg, interieur.svg");
 }
 
 main();
