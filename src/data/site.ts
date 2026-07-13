@@ -43,9 +43,3 @@ export const regionen = [
   "Selters",
 ] as const;
 
-export const stats = [
-  { value: 340, suffix: "+", label: `Vermittelte Objekte seit ${site.foundedYear}` },
-  { value: 48000, suffix: " m²", label: "Vermittelte Wohn- & Nutzfläche" },
-  { value: 17, suffix: " Jahre", label: "Erfahrung im Westerwald" },
-  { value: 52, suffix: " Tage", label: "Ø Vermarktungsdauer bis Notartermin" },
-] as const;
