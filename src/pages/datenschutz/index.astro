@@ -23,8 +23,9 @@ import { site } from "../../data/site";
       <div>
         <h2 class="font-display text-xl text-ink">1. Verantwortlicher</h2>
         <p class="mt-2">
-          {site.name}, {site.owner}<br />
-          {site.street}, {site.zip} {site.city}<br />
+          {site.name}, vertreten durch {site.ownerFull}<br />
+          {site.seatStreet}, {site.seatZip} {site.seatCity}<br />
+          Büro: {site.street}, {site.zip} {site.city}<br />
           E-Mail: {site.email} · Telefon: {site.phoneDisplay}
         </p>
       </div>
