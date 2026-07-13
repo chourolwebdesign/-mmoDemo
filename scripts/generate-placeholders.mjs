@@ -182,6 +182,15 @@ async function main() {
   });
   await writeFile(path.join(SITE_DIR, "verkaufen-hero.svg"), verkaufenSvg, "utf-8");
 
+  const interieurSvg = svgPlaceholder({
+    label: "Beratungsraum von SIM Immobilien",
+    index: 3,
+    width: 1400,
+    height: 1400,
+    icon: "interior",
+  });
+  await writeFile(path.join(SITE_DIR, "interieur.svg"), interieurSvg, "utf-8");
+
   const ogSvg = svgPlaceholder({
     label: "SIM Immobilien Service GmbH — Montabaur & Westerwald",
     index: 2,

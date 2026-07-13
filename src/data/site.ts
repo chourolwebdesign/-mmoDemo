@@ -17,7 +17,7 @@ export const site = {
   email: "kontakt@sim-immobilien.de",
   hours: "Nach Vereinbarung — auch abends",
   tagline:
-    "Inhabergeführt aus Montabaur. Wir begleiten Eigentümer im Westerwald — von der ersten Einschätzung bis weit über den Abschluss hinaus.",
+    "Inhabergeführt aus Montabaur. Wir begleiten Eigentümer im Westerwald, an Rhein, Lahn und in Koblenz — persönlich, ehrlich und langfristig.",
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
   googleBusiness: "https://maps.google.com/",
