@@ -5,6 +5,7 @@ import MobileNav from "./MobileNav.astro";
 const navLinks = [
   { href: "/immobilien/", label: "Immobilien" },
   { href: "/verkaufen/", label: "Verkaufen" },
+  { href: "/wertermittlung/", label: "Wertermittlung" },
   { href: "/suchauftrag/", label: "Gesuche" },
   { href: "/ueber-uns/", label: "Über uns" },
   { href: "/kontakt/", label: "Kontakt" },
@@ -15,18 +16,18 @@ const currentPath = Astro.url.pathname;
 
 <header class="sticky top-0 z-40 border-b border-line bg-paper/95 backdrop-blur">
   <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-    <a href="/" class="font-display text-xl font-medium tracking-tight text-ink sm:text-2xl">
-      {site.name}
+    <a href="/" class="shrink-0 whitespace-nowrap font-display text-xl font-medium tracking-tight text-ink sm:text-2xl">
+      {site.shortName}
     </a>
 
-    <nav class="hidden items-center gap-7 lg:flex" aria-label="Hauptnavigation">
+    <nav class="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Hauptnavigation">
       {navLinks.map((link) => {
         const active = currentPath === link.href || (link.href !== "/" && currentPath.startsWith(link.href));
         return (
           <a
             href={link.href}
             class:list={[
-              "text-sm font-medium transition hover:text-brass",
+              "whitespace-nowrap text-sm font-medium transition hover:text-brass",
               active ? "text-brass" : "text-ink",
             ]}
             aria-current={active ? "page" : undefined}
@@ -52,13 +53,13 @@ const currentPath = Astro.url.pathname;
       </a>
       <a
         href={`tel:${site.phone.replace(/\s/g, "")}`}
-        class="hidden text-sm font-medium text-ink transition hover:text-brass md:inline-block"
+        class="hidden whitespace-nowrap text-sm font-medium text-ink transition hover:text-brass xl:inline-block"
       >
         {site.phoneDisplay}
       </a>
       <a
         href="/verkaufen/"
-        class="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-white transition hover:bg-brass sm:inline-block"
+        class="hidden whitespace-nowrap rounded-full bg-ink px-4 py-2 text-sm font-medium text-white transition hover:bg-brass sm:inline-block"
       >
         Jetzt bewerten lassen
       </a>

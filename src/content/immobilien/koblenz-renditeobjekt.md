@@ -3,9 +3,9 @@ title: "Mehrfamilienhaus als Renditeobjekt, vollvermietet"
 objektart: sonstige
 vermarktungsart: kauf
 status: aktiv
-ort: "Rüdesheim am Rhein"
-plz: "65385"
-preis: 1250000
+ort: "Koblenz"
+plz: "56068"
+preis: 980000
 courtage: "3,57 % inkl. MwSt., käuferseitig"
 wohneinheiten: 6
 wohnflaeche: 480
@@ -16,14 +16,14 @@ featured: true
 objektId: "OBJ-1078"
 ausstattung:
   - "6 vollvermietete Wohneinheiten"
-  - "Aktuelle Jahresnettokaltmiete ca. 68.400 €"
+  - "Aktuelle Jahresnettokaltmiete ca. 54.000 €"
   - "Dach 2018 saniert"
   - "Heizungsanlage 2015 erneuert (Gas-Brennwert)"
   - "Stellplätze für alle Einheiten vorhanden"
 lage: >
-  Zentrale Lage in Rüdesheim, wenige Gehminuten zur Rheinpromenade und zur
-  Drosselgasse. Hohe touristische Nachfrage nach Wohnraum und stabile Vermietbarkeit
-  durch Dauermieter.
+  Gefragte Stadtlage in Koblenz, wenige Minuten zur Innenstadt und zum
+  Rheinufer. Stabile Vermietbarkeit durch die Nähe zu Universität,
+  Behördenstandorten und großen Arbeitgebern der Region.
 energieausweis:
   typ: bedarf
   wert: 118
@@ -32,24 +32,24 @@ energieausweis:
   baujahr: 1965
   gueltigBis: "2030-09-30"
 bilder:
-  - src: "/images/listings/ruedesheim-renditeobjekt/1.svg"
-    alt: "Fassade des Mehrfamilienhauses in Rüdesheim"
-  - src: "/images/listings/ruedesheim-renditeobjekt/2.svg"
+  - src: "/images/listings/koblenz-renditeobjekt/1.svg"
+    alt: "Fassade des Mehrfamilienhauses in Koblenz"
+  - src: "/images/listings/koblenz-renditeobjekt/2.svg"
     alt: "Treppenhaus des Mehrfamilienhauses"
-  - src: "/images/listings/ruedesheim-renditeobjekt/3.svg"
+  - src: "/images/listings/koblenz-renditeobjekt/3.svg"
     alt: "Beispielwohnung im Mehrfamilienhaus"
-lat: 49.9786
-lng: 7.9280
+lat: 50.3569
+lng: 7.5890
 ---
 
-Vollvermietetes Mehrfamilienhaus mit sechs Wohneinheiten in zentraler Lage von
-Rüdesheim am Rhein. Die aktuelle Jahresnettokaltmiete liegt bei rund 68.400 €,
+Vollvermietetes Mehrfamilienhaus mit sechs Wohneinheiten in gefragter Stadtlage
+von Koblenz. Die aktuelle Jahresnettokaltmiete liegt bei rund 54.000 €,
 was einer Bruttorendite von ca. 5,5 % entspricht.
 
 Dach (2018) und Heizungsanlage (2015) wurden in den vergangenen Jahren erneuert.
 Für alle Einheiten stehen Stellplätze zur Verfügung.
 
-**Kaufpreis:** 1.250.000 € zzgl. Grunderwerbsteuer, Notar- und Grundbuchkosten.
+**Kaufpreis:** 980.000 € zzgl. Grunderwerbsteuer, Notar- und Grundbuchkosten.
 **Courtage:** 3,57 % inkl. MwSt., käuferseitig, bei notarieller Beurkundung fällig.
 
 *Angaben laut Auskunft Dritter, ohne Gewähr. Änderungen, Zwischenverkauf und Irrtum

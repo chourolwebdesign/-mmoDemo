@@ -84,9 +84,9 @@ function svgPlaceholder({ label, index, width = 1600, height = 1067, icon = "ext
 
 const listings = [
   {
-    slug: "wiesbaden-sonnenberg-villa",
+    slug: "montabaur-einfamilienhaus",
     images: [
-      { label: "Straßenansicht, Wiesbaden-Sonnenberg", icon: "exterior" },
+      { label: "Straßenansicht, Montabaur", icon: "exterior" },
       { label: "Wohnzimmer mit Kamin, Erdgeschoss", icon: "interior" },
       { label: "Offene Wohnküche mit Einbauküche", icon: "interior" },
       { label: "Terrasse und Garten, Südwestausrichtung", icon: "outdoor" },
@@ -94,54 +94,54 @@ const listings = [
     ],
   },
   {
-    slug: "wiesbaden-biebrich-eigentumswohnung",
+    slug: "wirges-eigentumswohnung",
     images: [
       { label: "Wohnzimmer mit Blick zum Balkon", icon: "interior" },
       { label: "Offene Küche im Wohnbereich", icon: "interior" },
       { label: "Schlafzimmer mit Blick ins Grüne", icon: "interior" },
-      { label: "Außenansicht, Wiesbaden-Biebrich", icon: "exterior" },
+      { label: "Außenansicht, Wirges", icon: "exterior" },
     ],
   },
   {
-    slug: "mainz-altstadt-altbauwohnung",
+    slug: "limburg-altstadt-altbauwohnung",
     images: [
-      { label: "Fassade des Altbaus, Mainzer Altstadt", icon: "exterior" },
+      { label: "Fassade des Altbaus, Limburger Altstadt", icon: "exterior" },
       { label: "Wohnzimmer mit Stuckdecke und Dielenboden", icon: "interior" },
       { label: "Sanierte Einbauküche", icon: "interior" },
     ],
   },
   {
-    slug: "taunusstein-baugrundstueck",
+    slug: "wallmerod-baugrundstueck",
     images: [
-      { label: "Baugrundstück in Taunusstein-Wehen", icon: "plan" },
+      { label: "Baugrundstück in Wallmerod", icon: "plan" },
       { label: "Blick über das Grundstück Richtung Wald", icon: "outdoor" },
     ],
   },
   {
-    slug: "wiesbaden-zentrum-praxisflaeche",
+    slug: "montabaur-zentrum-praxisflaeche",
     images: [
       { label: "Büro-/Praxisfläche mit Empfangsbereich", icon: "interior" },
       { label: "Konferenzraum der Gewerbefläche", icon: "interior" },
-      { label: "Fassade im Zentrum von Wiesbaden", icon: "exterior" },
+      { label: "Fassade im Zentrum von Montabaur", icon: "exterior" },
     ],
   },
   {
-    slug: "eltville-villa",
+    slug: "hachenburg-landhaus",
     images: [
-      { label: "Außenansicht der Villa mit Weinbergblick", icon: "exterior" },
+      { label: "Außenansicht des Landhauses mit Weitblick", icon: "exterior" },
       { label: "Wohnbereich mit großzügiger Fensterfront", icon: "interior" },
       { label: "Pool und Terrasse im Garten", icon: "outdoor" },
       { label: "Ansicht des Anwesens von der Zufahrt", icon: "exterior" },
     ],
   },
   {
-    slug: "wiesbaden-dotzheim-doppelhaushaelfte",
-    images: [{ label: "Außenansicht, Wiesbaden-Dotzheim", icon: "exterior" }],
+    slug: "ransbach-baumbach-doppelhaushaelfte",
+    images: [{ label: "Außenansicht, Ransbach-Baumbach", icon: "exterior" }],
   },
   {
-    slug: "ruedesheim-renditeobjekt",
+    slug: "koblenz-renditeobjekt",
     images: [
-      { label: "Fassade des Mehrfamilienhauses, Rüdesheim", icon: "exterior" },
+      { label: "Fassade des Mehrfamilienhauses, Koblenz", icon: "exterior" },
       { label: "Treppenhaus des Mehrfamilienhauses", icon: "interior" },
       { label: "Beispielwohnung im Mehrfamilienhaus", icon: "interior" },
     ],
@@ -162,7 +162,7 @@ async function main() {
   await mkdir(SITE_DIR, { recursive: true });
 
   const heroSvg = svgPlaceholder({
-    label: "Immobilien für Wiesbaden und den Rheingau",
+    label: "Immobilien mit Vertrauen — persönlich betreut aus Montabaur",
     index: 0,
     width: 2000,
     height: 1500,
@@ -180,7 +180,7 @@ async function main() {
   await writeFile(path.join(SITE_DIR, "verkaufen-hero.svg"), verkaufenSvg, "utf-8");
 
   const ogSvg = svgPlaceholder({
-    label: "Fischer Immobilien — Wiesbaden & Rheingau",
+    label: "SIM Immobilien Service GmbH — Montabaur & Westerwald",
     index: 2,
     width: 1200,
     height: 630,

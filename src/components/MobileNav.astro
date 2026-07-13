@@ -4,6 +4,7 @@ import { site } from "../data/site";
 const navLinks = [
   { href: "/immobilien/", label: "Immobilien" },
   { href: "/verkaufen/", label: "Verkaufen" },
+  { href: "/wertermittlung/", label: "Wertermittlung" },
   { href: "/suchauftrag/", label: "Gesuche" },
   { href: "/ueber-uns/", label: "Über uns" },
   { href: "/kontakt/", label: "Kontakt" },
@@ -18,7 +19,7 @@ const navLinks = [
   aria-label="Hauptnavigation"
 >
   <div class="flex items-center justify-between px-6 py-5">
-    <span class="font-display text-lg text-white">{site.name}</span>
+    <span class="font-display text-lg text-white">{site.shortName}</span>
     <button
       id="mobile-nav-close"
       type="button"

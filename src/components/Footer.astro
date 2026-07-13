@@ -1,13 +1,13 @@
 ---
-import { site } from "../data/site";
+import { site, regionen } from "../data/site";
 
 const seoLinks = [
-  { href: "/immobilien/?vermarktungsart=kauf&objektart=haus", label: "Haus kaufen in Wiesbaden" },
-  { href: "/immobilien/?vermarktungsart=kauf&objektart=wohnung", label: "Wohnung kaufen in Wiesbaden" },
-  { href: "/immobilien/?vermarktungsart=miete&objektart=wohnung", label: "Wohnung mieten in Mainz" },
-  { href: "/immobilien/?objektart=grundstueck", label: "Baugrundstück im Rheingau" },
-  { href: "/verkaufen/", label: "Immobilie verkaufen in Wiesbaden" },
-  { href: "/suchauftrag/", label: "Suchauftrag hinterlegen" },
+  { href: "/immobilien/?vermarktungsart=kauf&objektart=haus", label: "Haus kaufen in Montabaur" },
+  { href: "/immobilien/?vermarktungsart=kauf&objektart=wohnung", label: "Wohnung kaufen im Westerwald" },
+  { href: "/immobilien/?vermarktungsart=miete&objektart=wohnung", label: "Wohnung mieten in Limburg" },
+  { href: "/immobilien/?objektart=grundstueck", label: "Baugrundstück im Westerwaldkreis" },
+  { href: "/verkaufen/", label: "Immobilie verkaufen in Montabaur" },
+  { href: "/wertermittlung/", label: "Immobilienbewertung Westerwald" },
 ];
 ---
 
@@ -40,6 +40,7 @@ const seoLinks = [
         <ul class="mt-4 space-y-2 text-sm">
           <li><a href="/immobilien/" class="text-white/70 hover:text-brass">Alle Angebote</a></li>
           <li><a href="/verkaufen/" class="text-white/70 hover:text-brass">Verkaufen</a></li>
+          <li><a href="/wertermittlung/" class="text-white/70 hover:text-brass">Wertermittlung</a></li>
           <li><a href="/suchauftrag/" class="text-white/70 hover:text-brass">Gesuche</a></li>
           <li><a href="/ueber-uns/" class="text-white/70 hover:text-brass">Über uns</a></li>
           <li><a href="/kontakt/" class="text-white/70 hover:text-brass">Kontakt</a></li>
@@ -56,7 +57,14 @@ const seoLinks = [
       </div>
     </div>
 
-    <div class="mt-12 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+    <div class="mt-12 border-t border-white/10 pt-6">
+      <p class="eyebrow text-white/50">Regionen</p>
+      <p class="mt-3 text-sm leading-relaxed text-white/60">
+        {regionen.join(" · ")}
+      </p>
+    </div>
+
+    <div class="mt-8 flex flex-col gap-4 border-t border-white/10 pt-6 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
       <p>&copy; {new Date().getFullYear()} {site.name}. Alle Rechte vorbehalten. {site.credit}</p>
       <nav class="flex flex-wrap gap-x-5 gap-y-2" aria-label="Rechtliches">
         <a href="/impressum/" class="hover:text-brass">Impressum</a>

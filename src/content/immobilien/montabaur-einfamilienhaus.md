@@ -3,9 +3,9 @@ title: "Freistehendes Einfamilienhaus mit Garten"
 objektart: haus
 vermarktungsart: kauf
 status: aktiv
-ort: "Wiesbaden-Sonnenberg"
-plz: "65191"
-preis: 895000
+ort: "Montabaur"
+plz: "56410"
+preis: 545000
 courtage: "3,57 % inkl. MwSt., käuferseitig"
 zimmer: 6
 wohnflaeche: 178
@@ -22,9 +22,10 @@ ausstattung:
   - "Terrasse und Gartenanteil, südwestlich ausgerichtet"
   - "Keller vollständig unterkellert"
 lage: >
-  Ruhige Wohnlage am Rand von Sonnenberg, umgeben von Grünflächen und dennoch nur
-  wenige Minuten zur Innenstadt von Wiesbaden. Kindergärten und Grundschule fußläufig
-  erreichbar, gute Anbindung an die A66 und den ÖPNV in Richtung Frankfurt.
+  Ruhige Wohnlage am Stadtrand von Montabaur, umgeben von Grünflächen und dennoch
+  nur wenige Minuten zur Innenstadt und zum Schloss. Kindergärten und Grundschule
+  fußläufig erreichbar, ICE-Bahnhof Montabaur und Anschluss an die A3 in wenigen
+  Fahrminuten — Frankfurt und Köln sind in rund 30 Minuten erreichbar.
 energieausweis:
   typ: bedarf
   wert: 68
@@ -33,18 +34,18 @@ energieausweis:
   baujahr: 1998
   gueltigBis: "2033-04-30"
 bilder:
-  - src: "/images/listings/wiesbaden-sonnenberg-villa/1.svg"
-    alt: "Straßenansicht des freistehenden Einfamilienhauses in Wiesbaden-Sonnenberg"
-  - src: "/images/listings/wiesbaden-sonnenberg-villa/2.svg"
+  - src: "/images/listings/montabaur-einfamilienhaus/1.svg"
+    alt: "Straßenansicht des freistehenden Einfamilienhauses in Montabaur"
+  - src: "/images/listings/montabaur-einfamilienhaus/2.svg"
     alt: "Wohnzimmer mit Kamin, Erdgeschoss"
-  - src: "/images/listings/wiesbaden-sonnenberg-villa/3.svg"
+  - src: "/images/listings/montabaur-einfamilienhaus/3.svg"
     alt: "Offene Wohnküche mit Einbauküche"
-  - src: "/images/listings/wiesbaden-sonnenberg-villa/4.svg"
+  - src: "/images/listings/montabaur-einfamilienhaus/4.svg"
     alt: "Terrasse und Garten, Südwestausrichtung"
-  - src: "/images/listings/wiesbaden-sonnenberg-villa/5.svg"
+  - src: "/images/listings/montabaur-einfamilienhaus/5.svg"
     alt: "Schlafzimmer im Obergeschoss"
-lat: 50.0847
-lng: 8.2778
+lat: 50.4375
+lng: 7.8258
 ---
 
 Dieses gepflegte Einfamilienhaus wurde 1998 in solider Massivbauweise errichtet und
@@ -56,7 +57,7 @@ Das Grundstück von 512 m² bietet einen pflegeleichten, nach Südwesten ausgeri
 Garten mit Terrasse — ideal für die warmen Monate. Die Doppelgarage sowie ein
 zusätzlicher Stellplatz runden das Angebot ab.
 
-**Kaufpreis:** 895.000 € zzgl. Grunderwerbsteuer, Notar- und Grundbuchkosten.
+**Kaufpreis:** 545.000 € zzgl. Grunderwerbsteuer, Notar- und Grundbuchkosten.
 **Courtage:** 3,57 % inkl. MwSt., käuferseitig, bei notarieller Beurkundung fällig.
 
 *Angaben laut Auskunft Dritter, ohne Gewähr. Änderungen, Zwischenverkauf und Irrtum

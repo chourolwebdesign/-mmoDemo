@@ -9,6 +9,7 @@ export const GET: APIRoute = async () => {
     "",
     "immobilien/",
     "verkaufen/",
+    "wertermittlung/",
     "suchauftrag/",
     "ueber-uns/",
     "kontakt/",
