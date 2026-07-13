@@ -27,11 +27,39 @@ const zielgruppen = [
   "Privatpersonen",
 ];
 
-const memberships = [
-  "Mitglied im Immobilienverband Deutschland (IVD)",
-  "DEKRA-zertifizierter Sachverständiger für Immobilienbewertung",
-  "DIN EN 15733 zertifiziert",
+const team = [
+  {
+    name: "Thomas Genschmer",
+    role: "Geschäftsführer & Immobilienmakler",
+    foto: "/images/team/genschmer.jpg",
+  },
+  {
+    name: "S. von Kleist",
+    role: "Buchhaltung",
+    foto: "/images/team/kleist.jpg",
+  },
+  {
+    name: "M. Wagner",
+    role: "Gebäudemanagement",
+    foto: "/images/team/wagner.jpg",
+  },
+  {
+    name: "M. Jacobsen-Urwald",
+    role: "Gebäudemanagement",
+    foto: "/images/team/jacobsen-urwald.jpg",
+  },
+  {
+    name: "D. Olivier",
+    role: "Gebäudemanagement",
+    foto: "/images/team/olivier.jpg",
+  },
+];
+
+const fakten = [
   "Erlaubnis nach § 34c GewO",
+  `Inhabergeführte GmbH — ${site.handelsregister}`,
+  "Makler, Hausverwaltung & Objektservice aus einer Hand",
+  "Persönlich erreichbar — Termine auch abends",
 ];
 ---
 
@@ -117,27 +145,36 @@ const memberships = [
   </section>
 
   <section class="border-t border-line bg-white py-16">
-    <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 sm:px-6 lg:grid-cols-[auto_1fr]">
-      <img
-        src="/agent-portrait.svg"
-        alt={`Porträt von ${site.owner}`}
-        width="160"
-        height="160"
-        class="h-40 w-40 rounded-full border border-line object-cover"
-      />
-      <div>
-        <p class="eyebrow">Inhaber</p>
-        <h2 class="mt-2 font-display text-2xl text-ink">{site.owner}</h2>
-        <p class="mt-1 text-sm text-slate">{site.ownerTitle}</p>
-        <ul class="mt-5 grid gap-2 sm:grid-cols-2">
-          {memberships.map((m) => (
-            <li class="flex items-start gap-2 text-sm text-ink">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brass"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
-              {m}
-            </li>
-          ))}
-        </ul>
+    <div class="mx-auto max-w-6xl px-4 sm:px-6">
+      <p class="eyebrow">Für Sie da</p>
+      <h2 class="mt-3 font-display text-3xl text-ink sm:text-4xl">Das Team stellt sich vor.</h2>
+      <div class="mt-10 grid gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3">
+        {team.map((person) => (
+          <figure>
+            <img
+              src={person.foto}
+              alt={`Porträt von ${person.name}`}
+              width="600"
+              height="600"
+              loading="lazy"
+              class="aspect-square w-full border border-line object-cover"
+            />
+            <figcaption class="mt-4">
+              <p class="font-display text-lg text-ink">{person.name}</p>
+              <p class="mt-0.5 text-sm text-slate">{person.role}</p>
+            </figcaption>
+          </figure>
+        ))}
       </div>
+
+      <ul class="mt-14 grid gap-2 border-t border-line pt-8 sm:grid-cols-2">
+        {fakten.map((m) => (
+          <li class="flex items-start gap-2 text-sm text-ink">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brass"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
+            {m}
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
 

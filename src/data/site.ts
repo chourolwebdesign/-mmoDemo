@@ -4,7 +4,7 @@ export const site = {
   claim: "Immobilien mit Vertrauen. Persönlich betreut aus Montabaur.",
   owner: "Thomas Genschmer",
   ownerFull: "Thomas Stephan Genschmer",
-  ownerTitle: "Immobilienmakler, Geschäftsführer",
+  ownerTitle: "Geschäftsführer & Immobilienmakler",
   // Büro Montabaur (Kundenkontakt / NAP)
   street: "Vorderer Rebstock 6",
   zip: "56410",
