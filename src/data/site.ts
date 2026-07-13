@@ -3,25 +3,34 @@ export const site = {
   shortName: "SIM Immobilien",
   claim: "Immobilien mit Vertrauen. Persönlich betreut aus Montabaur.",
   owner: "Thomas Genschmer",
-  ownerTitle: "Immobilienmakler, Geschäftsführer",
-  foundedYear: 2008,
-  street: "Bahnhofstraße 12",
+  ownerFull: "Thomas Stephan Genschmer",
+  ownerTitle: "Geschäftsführer & Immobilienmakler",
+  // Büro Montabaur (Kundenkontakt / NAP)
+  street: "Vorderer Rebstock 6",
   zip: "56410",
   city: "Montabaur",
+  // Eingetragener Sitz der GmbH (Impressum)
+  seatStreet: "Bahnhofstraße 16",
+  seatZip: "57610",
+  seatCity: "Altenkirchen",
+  handelsregister: "Amtsgericht Montabaur, HRB 30192",
+  ustId: "DE450314011",
   region: "Westerwald / Rhein-Lahn / Limburg",
-  phone: "+49 2602 12 34 56",
-  phoneDisplay: "02602 12 34 56",
+  phone: "+49 2602 9524395",
+  phoneDisplay: "02602 952 43 95",
   phoneHeader: "02602 · Rückruf",
-  phoneNote: "02602 · nach Vereinbarung",
-  whatsapp: "4926021234567",
-  email: "kontakt@sim-immobilien.de",
-  hours: "Nach Vereinbarung — auch abends",
+  phoneNote: "02602 952 43 95",
+  mobile: "+49 157 30127268",
+  mobileDisplay: "0157 30 12 72 68",
+  whatsapp: "4915730127268",
+  email: "info@sim-immoservice.de",
+  hours: "Mo–Fr 9:00–18:00 · Sa 10:00–14:00",
   tagline:
     "Inhabergeführt aus Montabaur. Wir begleiten Eigentümer im Westerwald, an Rhein, Lahn und in Koblenz — persönlich, ehrlich und langfristig.",
   instagram: "https://instagram.com/",
   facebook: "https://facebook.com/",
   googleBusiness: "https://maps.google.com/",
-  siteUrl: "https://www.sim-immobilien.de",
+  siteUrl: "https://www.sim-immoservice.de",
   credit: "Webdesign: Chourol Webdesign",
 } as const;
 
@@ -41,11 +50,4 @@ export const regionen = [
   "Höhr-Grenzhausen",
   "Wallmerod",
   "Selters",
-] as const;
-
-export const stats = [
-  { value: 340, suffix: "+", label: `Vermittelte Objekte seit ${site.foundedYear}` },
-  { value: 48000, suffix: " m²", label: "Vermittelte Wohn- & Nutzfläche" },
-  { value: 17, suffix: " Jahre", label: "Erfahrung im Westerwald" },
-  { value: 52, suffix: " Tage", label: "Ø Vermarktungsdauer bis Notartermin" },
 ] as const;

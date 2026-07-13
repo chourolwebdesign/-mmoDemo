@@ -1,21 +1,22 @@
 ---
 import { site } from "../data/site";
 
-const memberships = [
-  "Mitglied im Immobilienverband Deutschland (IVD)",
-  "DEKRA-zertifizierter Sachverständiger für Immobilienbewertung",
-  "DIN EN 15733 zertifiziert",
+const fakten = [
   "Erlaubnis nach § 34c GewO",
+  `Inhabergeführte GmbH — ${site.handelsregister}`,
+  "Makler, Hausverwaltung & Objektservice aus einer Hand",
+  "Persönlich erreichbar — Termine auch abends",
 ];
 ---
 
 <section class="border-y border-line bg-white">
   <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 lg:grid-cols-[auto_1fr] lg:items-center">
     <img
-      src="/agent-portrait.svg"
+      src="/images/team/genschmer.jpg"
       alt={`Porträt von ${site.owner}`}
       width="180"
       height="180"
+      loading="lazy"
       class="h-44 w-44 rounded-full border border-line object-cover"
     />
     <div>
@@ -33,7 +34,7 @@ const memberships = [
         Menschen, der Sie kennt."
       </blockquote>
       <ul class="mt-6 grid gap-2 sm:grid-cols-2">
-        {memberships.map((m) => (
+        {fakten.map((m) => (
           <li class="flex items-start gap-2 text-sm text-ink">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="mt-0.5 shrink-0 text-brass"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
             {m}

@@ -12,13 +12,23 @@ import { site } from "../../data/site";
         <h2 class="font-display text-xl text-ink">Angaben gemäß § 5 TMG</h2>
         <p class="mt-2">
           {site.name}<br />
-          Vertreten durch den Geschäftsführer: {site.owner}<br />
-          {site.street}<br />
-          {site.zip} {site.city}
+          {site.seatStreet}<br />
+          {site.seatZip} {site.seatCity}
         </p>
         <p class="mt-2">
-          Handelsregister: <strong>[HRB-Nummer einsetzen]</strong>, Registergericht:
-          <strong>[Amtsgericht einsetzen — RECHTLICH PRÜFEN]</strong>
+          Vertreten durch den Geschäftsführer: {site.ownerFull}
+        </p>
+        <p class="mt-2">
+          Handelsregister: {site.handelsregister}<br />
+          Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: {site.ustId}
+        </p>
+      </div>
+
+      <div>
+        <h2 class="font-display text-xl text-ink">Büro Montabaur</h2>
+        <p class="mt-2">
+          {site.street}<br />
+          {site.zip} {site.city}
         </p>
       </div>
 
@@ -26,6 +36,7 @@ import { site } from "../../data/site";
         <h2 class="font-display text-xl text-ink">Kontakt</h2>
         <p class="mt-2">
           Telefon: {site.phoneDisplay}<br />
+          Mobil: {site.mobileDisplay}<br />
           E-Mail: {site.email}
         </p>
       </div>
@@ -37,11 +48,7 @@ import { site } from "../../data/site";
           Aktenzeichen: <strong>[Aktenzeichen einsetzen]</strong>.
         </p>
         <p class="mt-2">
-          Zuständige Aufsichtsbehörde: <strong>[IHK / Ordnungsamt einsetzen]</strong>.
-        </p>
-        <p class="mt-2">
-          Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:
-          <strong>[USt-IdNr. einsetzen, falls vorhanden]</strong>.
+          Zuständige Aufsichtsbehörde: <strong>[IHK / Kreisverwaltung einsetzen]</strong>.
         </p>
       </div>
 
