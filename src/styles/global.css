@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap");
+/* Fonts are loaded via <link> in Layout.astro (preconnect + stylesheet) —
+   a CSS @import here would delay first render on slow mobile connections. */
 @import "tailwindcss";
 
 @theme {
@@ -43,83 +44,98 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.font-display {
-  font-family: var(--font-display);
-}
+/* Custom classes live in the components layer so Tailwind utilities
+   (e.g. `hidden`, responsive variants) can still override them. */
+@layer components {
+  .font-display {
+    font-family: var(--font-display);
+  }
 
-.tabular-nums {
-  font-variant-numeric: tabular-nums;
-}
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
 
-.eyebrow {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--color-brass-dark);
-}
+  .eyebrow {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--color-brass-dark);
+  }
 
-/* Rectangular, uppercase, letterspaced buttons — reference design language */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 0.85rem 1.6rem;
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
-}
+  /* Rectangular, uppercase, letterspaced buttons — reference design language */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.85rem 1.6rem;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    transition: background-color 150ms ease, color 150ms ease, border-color 150ms ease;
+  }
 
-.btn-sm {
-  padding: 0.6rem 1.15rem;
-}
+  .btn-sm {
+    padding: 0.6rem 1.15rem;
+  }
 
-.btn-brass {
-  background-color: var(--color-brass);
-  color: var(--color-ink);
-}
-.btn-brass:hover {
-  background-color: var(--color-brass-dark);
-  color: #fff;
-}
+  .btn-brass {
+    background-color: var(--color-brass);
+    color: var(--color-ink);
+  }
+  .btn-brass:hover {
+    background-color: var(--color-brass-dark);
+    color: #fff;
+  }
 
-.btn-dark {
-  background-color: var(--color-ink);
-  color: #fff;
-}
-.btn-dark:hover {
-  background-color: var(--color-brass);
-  color: var(--color-ink);
-}
+  .btn-dark {
+    background-color: var(--color-ink);
+    color: #fff;
+  }
+  .btn-dark:hover {
+    background-color: var(--color-brass);
+    color: var(--color-ink);
+  }
 
-.btn-outline-ink {
-  border: 1px solid var(--color-line);
-  color: var(--color-ink);
-}
-.btn-outline-ink:hover {
-  border-color: var(--color-brass);
-  color: var(--color-brass-dark);
-}
+  .btn-outline-ink {
+    border: 1px solid var(--color-line);
+    color: var(--color-ink);
+  }
+  .btn-outline-ink:hover {
+    border-color: var(--color-brass);
+    color: var(--color-brass-dark);
+  }
 
-.btn-outline-light {
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  color: #fff;
-}
-.btn-outline-light:hover {
-  border-color: #fff;
-  background-color: rgba(255, 255, 255, 0.08);
-}
+  .btn-outline-light {
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    color: #fff;
+  }
+  .btn-outline-light:hover {
+    border-color: #fff;
+    background-color: rgba(255, 255, 255, 0.08);
+  }
 
-.btn-outline-brass {
-  border: 1px solid var(--color-brass);
-  color: var(--color-brass);
-}
-.btn-outline-brass:hover {
-  background-color: var(--color-brass);
-  color: var(--color-ink);
+  .btn-outline-brass {
+    border: 1px solid var(--color-brass);
+    color: var(--color-brass);
+  }
+  .btn-outline-brass:hover {
+    background-color: var(--color-brass);
+    color: var(--color-ink);
+  }
+
+  /* Suchkartei fiche styling used by GesucheBoard */
+  .suchkartei-row {
+    border-left: 2px solid var(--color-brass-soft);
+    transition: border-color 150ms ease, transform 150ms ease;
+  }
+
+  .suchkartei-row:hover {
+    border-left-color: var(--color-brass);
+    transform: translateX(2px);
+  }
 }
 
 /* Visible focus ring everywhere, including hidden-until-focus skip link */
@@ -146,15 +162,4 @@ textarea:focus-visible,
 
 .skip-link:focus {
   left: 0;
-}
-
-/* Suchkartei fiche styling used by GesucheBoard */
-.suchkartei-row {
-  border-left: 2px solid var(--color-brass-soft);
-  transition: border-color 150ms ease, transform 150ms ease;
-}
-
-.suchkartei-row:hover {
-  border-left-color: var(--color-brass);
-  transform: translateX(2px);
 }
