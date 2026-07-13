@@ -39,7 +39,7 @@ const teaserItems: Gesuch[] = teaser
       {categories.map((c, i) => (
         <button
           type="button"
-          class="gesuche-tab rounded-full border border-line px-4 py-2 text-sm font-medium text-slate transition data-[active=true]:border-ink data-[active=true]:bg-ink data-[active=true]:text-white"
+          class="gesuche-tab border border-line px-4 py-2 text-sm font-medium text-slate transition data-[active=true]:border-ink data-[active=true]:bg-ink data-[active=true]:text-white"
           data-target={c.key}
           data-active={i === 0 ? "true" : "false"}
           role="tab"

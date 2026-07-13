@@ -155,7 +155,7 @@ const faqJsonLd = {
       </p>
       <div class="mt-8 grid gap-6 md:grid-cols-3">
         {verfahren.map((v) => (
-          <div class="rounded-2xl border border-line bg-paper p-6">
+          <div class="border border-line bg-paper p-6">
             <h3 class="font-display text-lg text-ink">{v.title}</h3>
             <p class="mt-2 text-sm leading-relaxed text-slate">{v.text}</p>
           </div>
@@ -169,7 +169,7 @@ const faqJsonLd = {
     <h2 class="mt-1 font-display text-3xl text-ink">Wann Sie eine Wertermittlung brauchen</h2>
     <div class="mt-8 grid gap-6 sm:grid-cols-2">
       {anlaesse.map((a) => (
-        <div class="flex gap-4 rounded-2xl border border-line bg-white p-6">
+        <div class="flex gap-4 border border-line bg-white p-6">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="mt-0.5 shrink-0 text-brass"><path d="m5 13 4 4L19 7" stroke-linecap="round" stroke-linejoin="round" /></svg>
           <div>
             <h3 class="font-display text-lg text-ink">{a.title}</h3>
@@ -186,7 +186,7 @@ const faqJsonLd = {
       <h2 class="mt-1 font-display text-3xl text-ink">In vier Schritten zur fundierten Einschätzung</h2>
       <div class="mt-8 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
         {ablauf.map((step, i) => (
-          <div class="relative rounded-2xl border border-line bg-paper p-6">
+          <div class="relative border border-line bg-paper p-6">
             <span class="font-display text-3xl text-brass-soft">{String(i + 1).padStart(2, "0")}</span>
             <h3 class="mt-3 font-display text-lg text-ink">{step.title}</h3>
             <p class="mt-2 text-sm leading-relaxed text-slate">{step.text}</p>

@@ -32,7 +32,7 @@ const { steps = defaultSteps } = Astro.props;
 
 <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
   {steps.map((step, i) => (
-    <div class="relative rounded-2xl border border-line bg-white p-6">
+    <div class="relative border border-line bg-white p-6">
       <span class="font-display text-3xl text-brass-soft">{String(i + 1).padStart(2, "0")}</span>
       <h3 class="mt-3 font-display text-lg text-ink">{step.title}</h3>
       <p class="mt-2 text-sm leading-relaxed text-slate">{step.text}</p>

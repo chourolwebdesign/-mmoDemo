@@ -63,9 +63,11 @@ const ICONS = {
     </g>`,
 };
 
-function svgPlaceholder({ label, index, width = 1600, height = 1067, icon = "exterior" }) {
-  const [c1, c2] = PALETTES[hash(label + index) % PALETTES.length];
-  const iconMarkup = ICONS[icon] ?? ICONS.exterior;
+function svgPlaceholder({ label, index, width = 1600, height = 1067, icon = "exterior", dark = false }) {
+  const [c1, c2] = dark ? ["#232b38", "#12161d"] : PALETTES[hash(label + index) % PALETTES.length];
+  const stroke = dark ? BRASS : INK;
+  const textFill = dark ? "#e9ddc6" : INK;
+  const iconMarkup = (ICONS[icon] ?? ICONS.exterior).replaceAll(`stroke="${INK}"`, `stroke="${stroke}"`);
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
@@ -77,7 +79,7 @@ function svgPlaceholder({ label, index, width = 1600, height = 1067, icon = "ext
   <g transform="translate(${width / 2},${height / 2 - 40}) scale(${width / 420})">
     ${iconMarkup}
   </g>
-  <text x="50%" y="${height - 88}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="${Math.round(width / 46)}" fill="${INK}" opacity="0.62">${escapeXml(label)}</text>
+  <text x="50%" y="${height - 88}" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="${Math.round(width / 46)}" fill="${textFill}" opacity="0.62">${escapeXml(label)}</text>
   <text x="50%" y="${height - 48}" text-anchor="middle" font-family="Arial, sans-serif" font-size="${Math.round(width / 100)}" letter-spacing="4" fill="${BRASS}">MUSTERFOTO &#183; PLATZHALTERBILD</text>
 </svg>`;
 }
@@ -162,11 +164,12 @@ async function main() {
   await mkdir(SITE_DIR, { recursive: true });
 
   const heroSvg = svgPlaceholder({
-    label: "Immobilien mit Vertrauen — persönlich betreut aus Montabaur",
+    label: "Schloss Montabaur über dem abendlichen Westerwald",
     index: 0,
     width: 2000,
     height: 1500,
     icon: "exterior",
+    dark: true,
   });
   await writeFile(path.join(SITE_DIR, "hero.svg"), heroSvg, "utf-8");
 

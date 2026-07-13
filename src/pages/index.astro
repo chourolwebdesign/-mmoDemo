@@ -38,7 +38,7 @@ const featuredListings = aktiv.slice(0, 6);
         <p class="eyebrow">Aktuelle Immobilien</p>
         <h2 class="mt-1 font-display text-3xl text-ink">Ausgewählte Angebote</h2>
       </div>
-      <a href="/immobilien/" class="rounded-full border border-line px-5 py-2.5 text-sm font-medium text-ink transition hover:border-brass hover:text-brass-dark">
+      <a href="/immobilien/" class="btn btn-sm btn-outline-ink">
         Alle Immobilien ansehen
       </a>
     </div>
@@ -52,7 +52,7 @@ const featuredListings = aktiv.slice(0, 6);
   <TestimonialStrip />
 
   <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-    <div class="rounded-3xl bg-brass-soft/40 p-6 sm:p-10">
+    <div class="bg-brass-soft/40 p-6 sm:p-10">
       <div class="flex flex-wrap items-end justify-between gap-4">
         <div>
           <p class="eyebrow">Kundengesuche</p>
@@ -62,7 +62,7 @@ const featuredListings = aktiv.slice(0, 6);
             Objekt öffentlich inseriert wird, prüfen wir zuerst passende Gesuche.
           </p>
         </div>
-        <a href="/suchauftrag/" class="rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brass">
+        <a href="/suchauftrag/" class="btn btn-sm btn-dark">
           Alle Gesuche ansehen
         </a>
       </div>
@@ -97,9 +97,10 @@ const featuredListings = aktiv.slice(0, 6);
   )}
 
   <CTABand
-    title="Was ist Ihre Immobilie wert?"
-    text="In einem unverbindlichen Erstgespräch ermitteln wir gemeinsam den realistischen Marktwert Ihrer Immobilie."
-    ctaLabel="Kostenlose Bewertung anfragen"
-    ctaHref="/verkaufen/"
+    eyebrow="Kostenlose Erstberatung"
+    title="Sprechen Sie mit einem Menschen, nicht mit einer Hotline."
+    text="Ob Bewertung, Verkauf, Vermietung oder Verwaltung — wir hören zu und entwickeln eine Lösung, die zu Ihrer Immobilie und Ihrer Lebenssituation passt."
+    ctaLabel="Termin vereinbaren"
+    ctaHref="/kontakt/"
   />
 </Layout>
