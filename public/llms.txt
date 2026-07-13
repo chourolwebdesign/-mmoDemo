@@ -1,14 +1,18 @@
-# Fischer Immobilien
+# SIM Immobilien Service GmbH
 
-> Fischer Immobilien ist Immobilienmaklerin in Wiesbaden und vermittelt Häuser,
-> Wohnungen, Grundstücke und Gewerbeimmobilien in Wiesbaden, Mainz und dem
-> Rheingau. Gegründet 1998, spezialisiert auf persönliche Beratung, fundierte
-> Immobilienbewertung und eine geprüfte Käuferkartei.
+> Die SIM Immobilien Service GmbH ist Immobilienmakler in Montabaur und
+> vermittelt Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien im
+> Westerwald, Rhein-Lahn-Kreis und im Raum Limburg/Koblenz. Klassischer Makler
+> mit langjähriger Erfahrung — spezialisiert auf persönliche Beratung,
+> fundierte Wertermittlung und eine gepflegte Käuferkartei.
 
 ## Wichtige Seiten
 
 - [Aktuelle Immobilien](/immobilien/): Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien zum Kauf und zur Miete
+- [Leistungen](/leistungen/): Immobilienmakler, Hausverwaltung und Objektservice aus einer Hand
+- [Spezialisierungen](/spezialisierungen/): Erbschaft, Scheidung, Insolvenz und weitere sensible Situationen
 - [Immobilie verkaufen](/verkaufen/): Kostenlose Immobilienbewertung und Verkaufsbegleitung
+- [Wertermittlung](/wertermittlung/): Fundierte Marktwerteinschätzung für Haus, Wohnung und Grundstück
 - [Kundengesuche](/suchauftrag/): Aktuelle Suchaufträge und eigenes Suchprofil hinterlegen
 - [Über uns](/ueber-uns/): Hintergrund, Qualifikationen und Arbeitsweise
-- [Kontakt](/kontakt/): Telefon, E-Mail, WhatsApp und Adresse
+- [Kontakt](/kontakt/): Telefon, E-Mail, WhatsApp und Adresse in Montabaur

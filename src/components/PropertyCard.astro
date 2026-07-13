@@ -21,7 +21,7 @@ const soldOut = d.status === "verkauft" || d.status === "vermietet";
   data-ort={d.ort.toLowerCase()}
   data-preis={d.preis}
   class:list={[
-    "group block overflow-hidden rounded-2xl border border-line bg-white transition hover:-translate-y-0.5 hover:shadow-lg",
+    "group block overflow-hidden border border-line bg-white transition hover:-translate-y-0.5 hover:shadow-lg",
     soldOut && "opacity-80",
   ]}
 >

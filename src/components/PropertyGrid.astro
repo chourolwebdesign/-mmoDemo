@@ -14,7 +14,7 @@ const { entries, emptyMessage = "Aktuell keine passenden Objekte." } = Astro.pro
   {entries.map((entry) => <PropertyCard entry={entry} />)}
 </div>
 <div
-  class:list={["rounded-2xl border border-dashed border-line bg-white/60 p-12 text-center", entries.length > 0 && "hidden"]}
+  class:list={["border border-dashed border-line bg-white/60 p-12 text-center", entries.length > 0 && "hidden"]}
   id="property-grid-empty"
 >
   <p class="font-display text-xl text-ink">{emptyMessage}</p>
@@ -24,7 +24,7 @@ const { entries, emptyMessage = "Aktuell keine passenden Objekte." } = Astro.pro
   </p>
   <a
     href="/suchauftrag/"
-    class="mt-5 inline-block rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brass"
+    class="btn btn-sm btn-dark mt-5"
   >
     Suchauftrag hinterlegen
   </a>

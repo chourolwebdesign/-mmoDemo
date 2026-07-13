@@ -2,8 +2,11 @@
 import { site } from "../data/site";
 
 const navLinks = [
+  { href: "/", label: "Start" },
   { href: "/immobilien/", label: "Immobilien" },
-  { href: "/verkaufen/", label: "Verkaufen" },
+  { href: "/leistungen/", label: "Leistungen" },
+  { href: "/spezialisierungen/", label: "Spezialisierungen" },
+  { href: "/wertermittlung/", label: "Wertermittlung" },
   { href: "/suchauftrag/", label: "Gesuche" },
   { href: "/ueber-uns/", label: "Über uns" },
   { href: "/kontakt/", label: "Kontakt" },
@@ -12,17 +15,23 @@ const navLinks = [
 
 <div
   id="mobile-nav"
-  class="fixed inset-0 z-50 hidden bg-ink/95 backdrop-blur"
+  class="fixed inset-0 z-50 hidden overflow-y-auto bg-ink/97 backdrop-blur"
   role="dialog"
   aria-modal="true"
   aria-label="Hauptnavigation"
 >
   <div class="flex items-center justify-between px-6 py-5">
-    <span class="font-display text-lg text-white">{site.name}</span>
+    <span class="flex items-center gap-3">
+      <span class="flex h-9 w-9 items-center justify-center border border-brass font-display text-lg text-brass" aria-hidden="true">S</span>
+      <span class="flex flex-col leading-tight">
+        <span class="font-display text-base text-white">SIM Immobilien</span>
+        <span class="text-[8px] uppercase tracking-[0.3em] text-white/60">Service · Montabaur</span>
+      </span>
+    </span>
     <button
       id="mobile-nav-close"
       type="button"
-      class="rounded-full p-2 text-white transition hover:text-brass"
+      class="p-2 text-white transition hover:text-brass"
       aria-label="Menü schließen"
     >
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
@@ -40,18 +49,12 @@ const navLinks = [
       </a>
     ))}
   </nav>
-  <div class="mt-4 flex flex-col gap-3 px-6">
-    <a
-      href={`tel:${site.phone.replace(/\s/g, "")}`}
-      class="rounded-full border border-white/30 px-5 py-3 text-center font-medium text-white transition hover:border-brass hover:text-brass"
-    >
-      {site.phoneDisplay}
+  <div class="mt-4 flex flex-col gap-3 px-6 pb-10">
+    <a href={`tel:${site.phone.replace(/\s/g, "")}`} class="btn btn-outline-light">
+      {site.phoneHeader}
     </a>
-    <a
-      href="/verkaufen/"
-      class="rounded-full bg-brass px-5 py-3 text-center font-medium text-ink transition hover:bg-brass-soft"
-    >
-      Jetzt bewerten lassen
+    <a href="/kontakt/" class="btn btn-brass">
+      Kostenlose Erstberatung
     </a>
   </div>
 </div>

@@ -9,7 +9,7 @@ interface Props {
 const { sticky = false, compact = false } = Astro.props;
 ---
 
-<div class:list={["rounded-2xl border border-line bg-white p-5", sticky && "lg:sticky lg:top-24"]}>
+<div class:list={["border border-line bg-white p-5", sticky && "lg:sticky lg:top-24"]}>
   <div class="flex items-center gap-4">
     <img
       src="/agent-portrait.svg"
@@ -44,7 +44,7 @@ const { sticky = false, compact = false } = Astro.props;
   <div class="mt-5 flex flex-col gap-2">
     <a
       href="#anfrage"
-      class="rounded-full bg-ink px-4 py-2.5 text-center text-sm font-medium text-white transition hover:bg-brass"
+      class="btn btn-sm btn-dark"
     >
       Direktanfrage senden
     </a>
@@ -52,7 +52,7 @@ const { sticky = false, compact = false } = Astro.props;
       href={`https://wa.me/${site.whatsapp}`}
       target="_blank"
       rel="noopener noreferrer"
-      class="rounded-full border border-line px-4 py-2.5 text-center text-sm font-medium text-ink transition hover:border-brass hover:text-brass"
+      class="btn btn-sm btn-outline-ink"
     >
       Per WhatsApp anfragen
     </a>

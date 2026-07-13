@@ -8,7 +8,10 @@ export const GET: APIRoute = async () => {
   const staticPaths = [
     "",
     "immobilien/",
+    "leistungen/",
+    "spezialisierungen/",
     "verkaufen/",
+    "wertermittlung/",
     "suchauftrag/",
     "ueber-uns/",
     "kontakt/",

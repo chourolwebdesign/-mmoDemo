@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.fischer-immobilien-wiesbaden.de/sitemap.xml
+Sitemap: https://www.sim-immobilien.de/sitemap.xml

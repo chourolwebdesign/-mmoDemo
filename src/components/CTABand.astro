@@ -1,5 +1,6 @@
 ---
 interface Props {
+  eyebrow?: string;
   title: string;
   text?: string;
   ctaLabel?: string;
@@ -7,21 +8,25 @@ interface Props {
 }
 
 const {
+  eyebrow = "Kostenlose Erstberatung",
   title,
   text,
-  ctaLabel = "Jetzt kontaktieren",
+  ctaLabel = "Termin vereinbaren",
   ctaHref = "/kontakt/",
 } = Astro.props;
 ---
 
-<section class="bg-ink text-white">
-  <div class="mx-auto flex max-w-6xl flex-col items-start gap-6 px-4 py-16 sm:px-6 lg:flex-row lg:items-center lg:justify-between">
-    <div class="max-w-2xl">
-      <h2 class="font-display text-3xl leading-tight sm:text-4xl">{title}</h2>
-      {text && <p class="mt-3 text-white/75">{text}</p>}
+<section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+  <div class="bg-ink px-6 py-14 text-white sm:px-12">
+    <div class="flex flex-col items-start gap-8 lg:flex-row lg:items-center lg:justify-between">
+      <div class="max-w-2xl">
+        <p class="eyebrow text-brass">{eyebrow}</p>
+        <h2 class="mt-3 font-display text-3xl leading-tight sm:text-4xl">{title}</h2>
+        {text && <p class="mt-4 text-white/75 leading-relaxed">{text}</p>}
+      </div>
+      <a href={ctaHref} class="btn btn-outline-brass shrink-0">
+        {ctaLabel} <span aria-hidden="true">↗</span>
+      </a>
     </div>
-    <a href={ctaHref} class="shrink-0 rounded-full bg-brass px-7 py-3.5 text-sm font-semibold text-ink transition hover:bg-white">
-      {ctaLabel}
-    </a>
   </div>
 </section>

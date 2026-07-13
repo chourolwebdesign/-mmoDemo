@@ -12,7 +12,7 @@ const externalMapsUrl = `https://www.google.com/maps/search/?api=1&query=${lat &
 const embedSrc = `https://www.google.com/maps?q=${lat && lng ? `${lat},${lng}` : query}&z=14&output=embed`;
 ---
 
-<div class="overflow-hidden rounded-2xl border border-line bg-white" data-maps-consent data-embed-src={embedSrc}>
+<div class="overflow-hidden border border-line bg-white" data-maps-consent data-embed-src={embedSrc}>
   <div class="maps-placeholder flex flex-col items-center gap-3 bg-paper p-8 text-center">
     <p class="max-w-md text-sm text-slate">
       Wenn Sie die Karte anzeigen, übertragen Sie Daten (u. a. Ihre IP-Adresse) an
@@ -20,7 +20,7 @@ const embedSrc = `https://www.google.com/maps?q=${lat && lng ? `${lat},${lng}` :
     </p>
     <button
       type="button"
-      class="maps-consent-btn rounded-full bg-ink px-5 py-2.5 text-sm font-medium text-white transition hover:bg-brass"
+      class="maps-consent-btn btn btn-sm btn-dark"
     >
       Google Maps Karte anzeigen
     </button>

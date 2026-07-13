@@ -7,7 +7,7 @@ interface Props {
 const { objektTitel, objektId } = Astro.props;
 ---
 
-<div id="anfrage" class="scroll-mt-24 rounded-2xl border border-line bg-white p-6 sm:p-8">
+<div id="anfrage" class="scroll-mt-24 border border-line bg-white p-6 sm:p-8">
   <p class="eyebrow">Direktanfrage</p>
   <h2 class="mt-1 font-display text-2xl text-ink">Interesse an diesem Objekt?</h2>
   <p class="mt-1 text-sm text-slate">Objekt-ID {objektId} · Wir melden uns in der Regel innerhalb eines Werktages.</p>
@@ -75,7 +75,7 @@ const { objektTitel, objektId } = Astro.props;
     <div data-form-status class="hidden sm:col-span-2" aria-live="polite"></div>
 
     <div class="sm:col-span-2">
-      <button type="submit" class="rounded-full bg-ink px-6 py-3 text-sm font-medium text-white transition hover:bg-brass">
+      <button type="submit" class="btn btn-dark">
         Anfrage senden
       </button>
       <p class="mt-2 text-xs text-slate">🔒 Ihre Anfrage wird SSL-verschlüsselt übertragen.</p>

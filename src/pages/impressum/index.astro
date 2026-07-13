@@ -12,9 +12,13 @@ import { site } from "../../data/site";
         <h2 class="font-display text-xl text-ink">Angaben gemäß § 5 TMG</h2>
         <p class="mt-2">
           {site.name}<br />
-          {site.owner}, {site.ownerTitle}<br />
+          Vertreten durch den Geschäftsführer: {site.owner}<br />
           {site.street}<br />
           {site.zip} {site.city}
+        </p>
+        <p class="mt-2">
+          Handelsregister: <strong>[HRB-Nummer einsetzen]</strong>, Registergericht:
+          <strong>[Amtsgericht einsetzen — RECHTLICH PRÜFEN]</strong>
         </p>
       </div>
 
@@ -44,7 +48,7 @@ import { site } from "../../data/site";
       <div>
         <h2 class="font-display text-xl text-ink">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
         <p class="mt-2">
-          Berufsbezeichnung: Immobilienmaklerin, verliehen in der Bundesrepublik
+          Berufsbezeichnung: Immobilienmakler, verliehen in der Bundesrepublik
           Deutschland. Es gilt die Gewerbeordnung (GewO), einsehbar unter
           <a href="https://www.gesetze-im-internet.de/gewo/" target="_blank" rel="noopener noreferrer" class="underline hover:text-ink"> gesetze-im-internet.de</a>.
         </p>
