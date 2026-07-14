@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
+import BewertungBand from "../components/BewertungBand.astro";
 import PropertyGrid from "../components/PropertyGrid.astro";
 import TestimonialStrip from "../components/TestimonialStrip.astro";
 import GesucheBoard from "../components/GesucheBoard.astro";
@@ -93,6 +94,8 @@ const regionOrte = [
   description={`${site.name} ist Immobilienmakler in Montabaur und vermittelt Häuser, Wohnungen, Grundstücke und Gewerbeimmobilien im Westerwald, Rhein-Lahn-Kreis und Raum Limburg/Koblenz.`}
 >
   <Hero />
+
+  <BewertungBand />
 
   <section class="mx-auto max-w-6xl px-4 py-20 sm:px-6">
     <div class="grid gap-10 lg:grid-cols-[180px_1fr]">

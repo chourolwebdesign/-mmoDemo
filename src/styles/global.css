@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-display: "Source Serif 4", ui-serif, Georgia, serif;
   --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
 
   --color-ink: #141a23;
