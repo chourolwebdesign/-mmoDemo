@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import PropertyGrid from "../../components/PropertyGrid.astro";
 import FilterBar from "../../components/FilterBar.astro";
+import BewertungBand from "../../components/BewertungBand.astro";
 import { site } from "../../data/site";
 
 const allListings = (await getCollection("immobilien")).sort((a, b) => {
@@ -27,9 +28,17 @@ const allListings = (await getCollection("immobilien")).sort((a, b) => {
       einen <a href="/suchauftrag/" class="underline decoration-brass underline-offset-2 hover:text-brass-dark">Suchauftrag</a>.
     </p>
 
+    <div class="mt-6 border border-dashed border-brass-dark/40 bg-brass-soft/30 px-4 py-3 text-sm text-ink">
+      <strong>Hinweis:</strong> Die hier gezeigten Objekte sind Beispieldaten zur
+      Demonstration des Designs — sie existieren nicht. Sie werden vor dem
+      Livegang durch Ihre echten Angebote ersetzt.
+    </div>
+
     <div class="mt-8">
       <FilterBar />
       <PropertyGrid entries={allListings} />
     </div>
   </section>
+
+  <BewertungBand />
 </Layout>

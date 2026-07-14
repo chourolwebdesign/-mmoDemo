@@ -9,26 +9,19 @@ import { site } from "../../data/site";
 
     <div class="prose-content mt-8 space-y-6 text-sm leading-relaxed text-slate">
       <div>
-        <h2 class="font-display text-xl text-ink">Angaben gemäß § 5 TMG</h2>
+        <h2 class="font-display text-xl text-ink">Angaben gemäß § 5 DDG</h2>
         <p class="mt-2">
           {site.name}<br />
-          {site.seatStreet}<br />
-          {site.seatZip} {site.seatCity}
+          {site.street}<br />
+          {site.zip} {site.city}
         </p>
         <p class="mt-2">
           Vertreten durch den Geschäftsführer: {site.ownerFull}
         </p>
         <p class="mt-2">
-          Handelsregister: {site.handelsregister}<br />
+          Registergericht: Amtsgericht Montabaur<br />
+          Registernummer: HRB 30192<br />
           Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: {site.ustId}
-        </p>
-      </div>
-
-      <div>
-        <h2 class="font-display text-xl text-ink">Büro Montabaur</h2>
-        <p class="mt-2">
-          {site.street}<br />
-          {site.zip} {site.city}
         </p>
       </div>
 
@@ -36,37 +29,34 @@ import { site } from "../../data/site";
         <h2 class="font-display text-xl text-ink">Kontakt</h2>
         <p class="mt-2">
           Telefon: {site.phoneDisplay}<br />
-          Mobil: {site.mobileDisplay}<br />
           E-Mail: {site.email}
         </p>
       </div>
 
-      <div class="rounded-xl border border-dashed border-brass-dark/50 bg-brass-soft/30 p-4">
-        <p class="font-medium text-ink">[RECHTLICH PRÜFEN]</p>
+      <div>
+        <h2 class="font-display text-xl text-ink">Redaktionell verantwortlich</h2>
         <p class="mt-2">
-          Erlaubnis nach § 34c Gewerbeordnung (GewO), erteilt durch: <strong>[zuständige Behörde einsetzen]</strong>,
-          Aktenzeichen: <strong>[Aktenzeichen einsetzen]</strong>.
-        </p>
-        <p class="mt-2">
-          Zuständige Aufsichtsbehörde: <strong>[IHK / Kreisverwaltung einsetzen]</strong>.
+          {site.ownerFull}<br />
+          {site.street}, {site.zip} {site.city}
         </p>
       </div>
 
       <div>
-        <h2 class="font-display text-xl text-ink">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+        <h2 class="font-display text-xl text-ink">Aufsichtsbehörde und Berufsrecht</h2>
         <p class="mt-2">
-          Berufsbezeichnung: Immobilienmakler, verliehen in der Bundesrepublik
-          Deutschland. Es gilt die Gewerbeordnung (GewO), einsehbar unter
-          <a href="https://www.gesetze-im-internet.de/gewo/" target="_blank" rel="noopener noreferrer" class="underline hover:text-ink"> gesetze-im-internet.de</a>.
+          Zuständige Aufsichtsbehörde / Kammer: {site.aufsichtsbehoerde}
+        </p>
+        <p class="mt-2">
+          Berufsbezeichnung: Immobilienmakler (verliehen in Deutschland)<br />
+          Berufsrechtliche Regelungen: § 34c Gewerbeordnung (GewO) sowie
+          Makler- und Bauträgerverordnung (MaBV), einsehbar unter
+          <a href="https://www.gesetze-im-internet.de/" target="_blank" rel="noopener noreferrer" class="underline hover:text-ink"> gesetze-im-internet.de</a>.
         </p>
       </div>
 
       <div>
-        <h2 class="font-display text-xl text-ink">EU-Streitschlichtung</h2>
+        <h2 class="font-display text-xl text-ink">Verbraucherstreitbeilegung</h2>
         <p class="mt-2">
-          Die Europäische Kommission stellt eine Plattform zur
-          Online-Streitbeilegung (OS) bereit:
-          <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" class="underline hover:text-ink"> https://ec.europa.eu/consumers/odr/</a>.
           Wir sind nicht verpflichtet und nicht bereit, an
           Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
           teilzunehmen.
@@ -76,10 +66,19 @@ import { site } from "../../data/site";
       <div>
         <h2 class="font-display text-xl text-ink">Haftung für Inhalte</h2>
         <p class="mt-2">
-          Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte
-          auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.
-          Objektangaben erfolgen nach bestem Wissen, jedoch ohne Gewähr;
-          Zwischenverkauf und Irrtum vorbehalten.
+          Als Diensteanbieter sind wir für eigene Inhalte auf diesen Seiten
+          nach den allgemeinen Gesetzen verantwortlich. Objektangaben erfolgen
+          nach bestem Wissen, jedoch ohne Gewähr; Zwischenverkauf und Irrtum
+          vorbehalten.
+        </p>
+      </div>
+
+      <div class="rounded-xl border border-dashed border-brass-dark/50 bg-brass-soft/30 p-4">
+        <p class="font-medium text-ink">[RECHTLICH PRÜFEN]</p>
+        <p class="mt-2">
+          Finale Freigabe des Impressums durch eine fachkundige Stelle vor dem
+          Livegang — insbesondere Aktenzeichen der § 34c-Erlaubnis sowie die
+          Haftungs- und Urheberrechtstexte.
         </p>
       </div>
     </div>
