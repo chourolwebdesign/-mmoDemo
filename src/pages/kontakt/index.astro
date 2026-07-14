@@ -4,17 +4,17 @@ import MapsConsent from "../../components/MapsConsent.astro";
 import { site, regionen } from "../../data/site";
 
 const direktRows = [
-  { label: "Telefon", value: site.phoneNote, href: `tel:${site.phone.replace(/\s/g, "")}`, icon: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z" },
-  { label: "Mobil", value: site.mobileDisplay, href: `tel:${site.mobile.replace(/\s/g, "")}`, icon: "M8 2h8a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Zm4 16.5h.01" },
+  { label: "Telefon", value: site.phoneDisplay, href: `tel:${site.phone.replace(/\s/g, "")}`, icon: "M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z" },
   { label: "E-Mail", value: site.email, href: `mailto:${site.email}`, icon: "M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm0 3 8 6 8-6" },
   { label: "Büro", value: `${site.street}, ${site.zip} ${site.city}`, icon: "M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Zm-8 3a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" },
-  { label: "Termine", value: "Nach Vereinbarung — auch abends", icon: "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm0-16v6l4 2" },
+  { label: "Öffnungszeiten", value: site.hours, icon: "M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20Zm0-16v6l4 2" },
+  { label: "Termine", value: site.hoursNote, icon: "M8 2v4M16 2v4M3 8h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Z" },
 ];
 ---
 
 <Layout
   title={`Kontakt | ${site.name}`}
-  description={`Kontaktieren Sie ${site.name} in Montabaur — telefonisch, per E-Mail, WhatsApp oder über unser Kontaktformular. Termine nach Vereinbarung, auch abends.`}
+  description={`Kontaktieren Sie ${site.name} in Montabaur — telefonisch, per E-Mail oder über unser Kontaktformular. Mo–Fr 9–18 Uhr, Sa 10–14 Uhr, weitere Termine nach Absprache.`}
 >
   <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
     <div class="grid gap-8 lg:grid-cols-[160px_1fr]">
@@ -41,52 +41,52 @@ const direktRows = [
           <input type="text" name="_honeypot" class="hidden" tabindex="-1" autocomplete="off" />
 
           <div class="flex flex-col gap-1.5">
-            <label for="k-name" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Name *</label>
-            <input id="k-name" name="Name" type="text" required class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
+            <label for="k-vorname" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Vorname</label>
+            <input id="k-vorname" name="Vorname" type="text" autocomplete="given-name" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
           </div>
           <div class="flex flex-col gap-1.5">
-            <label for="k-email" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">E-Mail *</label>
-            <input id="k-email" name="E-Mail" type="email" required class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
+            <label for="k-nachname" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Nachname *</label>
+            <input id="k-nachname" name="Nachname" type="text" required autocomplete="family-name" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
           </div>
           <div class="flex flex-col gap-1.5">
             <label for="k-telefon" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Telefon</label>
-            <input id="k-telefon" name="Telefon" type="tel" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
+            <input id="k-telefon" name="Telefon" type="tel" autocomplete="tel" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
           </div>
           <div class="flex flex-col gap-1.5">
-            <label for="k-ort" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Ort</label>
-            <input id="k-ort" name="Ort" type="text" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
+            <label for="k-email" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">E-Mail-Adresse *</label>
+            <input id="k-email" name="E-Mail" type="email" required autocomplete="email" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0" />
           </div>
           <div class="flex flex-col gap-1.5 sm:col-span-2">
-            <label for="k-anliegen" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Anliegen</label>
-            <select id="k-anliegen" name="Anliegen" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0">
-              <option value="Kostenlose Erstberatung">Kostenlose Erstberatung</option>
-              <option value="Immobilie verkaufen">Immobilie verkaufen</option>
-              <option value="Immobilie vermieten">Immobilie vermieten</option>
+            <label for="k-anliegen" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Interesse an</label>
+            <select id="k-anliegen" name="Interesse an" class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm focus:border-brass focus:ring-0">
+              <option value="Beratung">Beratung</option>
               <option value="Wertermittlung">Wertermittlung</option>
-              <option value="Verwaltung / Objektservice">Verwaltung / Objektservice</option>
-              <option value="Sonstiges">Sonstiges</option>
+              <option value="Immobilien">Immobilien</option>
+              <option value="Hausverwaltung">Hausverwaltung</option>
+              <option value="Objektpflege">Objektpflege</option>
             </select>
           </div>
           <div class="flex flex-col gap-1.5 sm:col-span-2">
-            <label for="k-nachricht" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Nachricht</label>
+            <label for="k-nachricht" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-ink">Nachricht *</label>
             <textarea
               id="k-nachricht"
               name="Nachricht"
+              required
               rows="4"
               placeholder="Erzählen Sie uns kurz von Ihrer Immobilie oder Ihrem Anliegen."
               class="border-0 border-b border-line bg-transparent px-0 py-2 text-sm placeholder:text-slate/50 focus:border-brass focus:ring-0"
             ></textarea>
           </div>
 
+          <label class="flex items-start gap-2 text-sm text-ink sm:col-span-2">
+            <input type="checkbox" name="Datenschutz akzeptiert" value="Ja" required class="mt-0.5 h-4 w-4 border-line" />
+            <span>Ich habe die <a href="/datenschutz/" class="underline hover:text-brass-dark">Datenschutzerklärung</a> zur Kenntnis genommen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu. *</span>
+          </label>
+
           <div data-form-status class="hidden sm:col-span-2" aria-live="polite"></div>
 
           <div class="sm:col-span-2">
             <button type="submit" class="btn btn-dark">Nachricht senden</button>
-            <p class="mt-3 text-xs text-slate">
-              Mit dem Absenden stimmen Sie der Kontaktaufnahme zur Bearbeitung
-              Ihrer Anfrage zu. Details in der
-              <a href="/datenschutz/" class="underline hover:text-ink">Datenschutzerklärung</a>.
-            </p>
           </div>
         </form>
       </div>
@@ -109,14 +109,6 @@ const direktRows = [
               </li>
             ))}
           </ul>
-          <a
-            href={`https://wa.me/${site.whatsapp}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-outline-ink mt-2 w-full"
-          >
-            Per WhatsApp schreiben
-          </a>
         </div>
 
         <blockquote class="border-l-2 border-brass pl-5 font-display text-xl leading-relaxed text-ink">

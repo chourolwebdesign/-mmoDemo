@@ -48,13 +48,8 @@ const { sticky = false, compact = false } = Astro.props;
     >
       Direktanfrage senden
     </a>
-    <a
-      href={`https://wa.me/${site.whatsapp}`}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="btn btn-sm btn-outline-ink"
-    >
-      Per WhatsApp anfragen
+    <a href={`tel:${site.phone.replace(/\s/g, "")}`} class="btn btn-sm btn-outline-ink">
+      {site.phoneDisplay}
     </a>
   </div>
 </div>
