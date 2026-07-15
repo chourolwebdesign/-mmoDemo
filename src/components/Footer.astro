@@ -22,12 +22,13 @@ const seoLinks = [
 ];
 ---
 
-<footer class="border-t border-line bg-ink text-white/90">
+<footer class="relative overflow-hidden border-t border-line bg-ink text-white/90">
+  <img src="/images/site/logo-sim-mark.png" alt="" aria-hidden="true" loading="lazy" class="pointer-events-none absolute -bottom-12 -right-16 w-[26rem] select-none opacity-[0.05]" />
   <div class="mx-auto max-w-6xl px-4 py-14 sm:px-6">
     <div class="grid gap-10 lg:grid-cols-4">
       <div>
         <div class="flex items-center gap-3">
-          <span class="flex h-10 w-10 items-center justify-center border border-brass pb-0.5 font-display text-[22px] font-semibold leading-none text-brass" aria-hidden="true">S</span>
+          <span class="flex h-10 w-10 items-center justify-center overflow-hidden border border-brass bg-white" aria-hidden="true"><img src="/images/site/logo-bear.png" alt="" class="h-full w-full object-cover" loading="lazy" /></span>
           <p class="font-display text-lg text-white">{site.name}</p>
         </div>
         <p class="mt-4 text-sm leading-relaxed text-white/70">{site.tagline}</p>
