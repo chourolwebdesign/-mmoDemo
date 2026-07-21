@@ -33,6 +33,15 @@ const teaserItems: Gesuch[] = teaser
       </div>
     ))}
   </div>
+) : totalCount === 0 ? (
+  <div class="border border-dashed border-line bg-white/60 p-10 text-center">
+    <p class="font-display text-xl text-ink">Aktuell keine öffentlichen Gesuche hinterlegt.</p>
+    <p class="mx-auto mt-2 max-w-xl text-sm text-slate">
+      Unsere Suchkartei wird gerade aufbereitet. Ihren Suchauftrag nehmen wir
+      selbstverständlich schon jetzt entgegen — wir melden uns, sobald ein
+      passendes Objekt verfügbar ist, oft bevor es öffentlich inseriert wird.
+    </p>
+  </div>
 ) : (
   <div>
     <div class="flex flex-wrap gap-2" role="tablist" aria-label="Gesuchskategorien">
@@ -63,7 +72,7 @@ const teaserItems: Gesuch[] = teaser
       ))}
     </div>
     <p class="mt-6 text-sm text-slate">
-      {totalCount > 0 ? `Insgesamt ${totalCount} aktuelle Kundengesuche in unserer Kartei — anonymisiert dargestellt.` : "Unsere öffentliche Gesuche-Übersicht wird gerade aufbereitet. Ihren Suchauftrag nehmen wir bereits jetzt gerne entgegen."}
+      {`Insgesamt ${totalCount} aktuelle Kundengesuche in unserer Kartei — anonymisiert dargestellt.`}
     </p>
   </div>
 )}
