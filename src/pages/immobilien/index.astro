@@ -36,7 +36,7 @@ const allListings = (await getCollection("immobilien")).sort((a, b) => {
 
     <div class="mt-8">
       <FilterBar />
-      <PropertyGrid entries={allListings} />
+      <PropertyGrid entries={allListings} emptyMessage="Unsere Online-Inserate werden gerade für Sie aufbereitet! Bitte schauen Sie in Kürze noch einmal vorbei." />
     </div>
   </section>
 

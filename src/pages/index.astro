@@ -4,8 +4,8 @@ import Layout from "../layouts/Layout.astro";
 import Hero from "../components/Hero.astro";
 import BewertungBand from "../components/BewertungBand.astro";
 import PropertyGrid from "../components/PropertyGrid.astro";
-import TestimonialStrip from "../components/TestimonialStrip.astro";
 import GesucheBoard from "../components/GesucheBoard.astro";
+import gesucheData from "../data/gesuche.json";
 import CTABand from "../components/CTABand.astro";
 import { site } from "../data/site";
 
@@ -16,6 +16,7 @@ const aktiv = allListings
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured));
 
 const featuredListings = aktiv.slice(0, 6);
+const gesucheCount = Object.values(gesucheData).reduce((sum, arr) => sum + arr.length, 0);
 
 const storyPoints = [
   "Persönlicher Ansprechpartner statt Hotline",
@@ -184,10 +185,11 @@ const regionOrte = [
           Alle Immobilien ansehen
         </a>
       </div>
-      <PropertyGrid entries={featuredListings} />
+      <PropertyGrid entries={featuredListings} emptyMessage="Unsere Online-Inserate werden gerade für Sie aufbereitet! Bitte schauen Sie in Kürze noch einmal vorbei." />
     </div>
   </section>
 
+  {gesucheCount > 0 && (
   <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6">
     <div class="bg-brass-soft/40 p-6 sm:p-10">
       <div class="flex flex-wrap items-end justify-between gap-4">
@@ -214,6 +216,7 @@ const regionOrte = [
       </p>
     </div>
   </section>
+  )}
 
   <section class="bg-ink py-20 text-white">
     <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:items-center">
@@ -242,8 +245,6 @@ const regionOrte = [
       </ul>
     </div>
   </section>
-
-  <TestimonialStrip />
 
   <CTABand
     eyebrow="Kostenlose Erstberatung"
