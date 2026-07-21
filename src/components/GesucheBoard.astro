@@ -63,7 +63,7 @@ const teaserItems: Gesuch[] = teaser
       ))}
     </div>
     <p class="mt-6 text-sm text-slate">
-      Insgesamt {totalCount} aktuelle Kundengesuche in unserer Kartei — anonymisiert dargestellt.
+      {totalCount > 0 ? `Insgesamt ${totalCount} aktuelle Kundengesuche in unserer Kartei — anonymisiert dargestellt.` : "Unsere öffentliche Gesuche-Übersicht wird gerade aufbereitet. Ihren Suchauftrag nehmen wir bereits jetzt gerne entgegen."}
     </p>
   </div>
 )}

@@ -1,10 +1,13 @@
+@import "@fontsource-variable/source-serif-4";
+@import "@fontsource-variable/source-serif-4/wght-italic.css";
+@import "@fontsource-variable/hanken-grotesk";
 /* Fonts are loaded via <link> in Layout.astro (preconnect + stylesheet) —
    a CSS @import here would delay first render on slow mobile connections. */
 @import "tailwindcss";
 
 @theme {
-  --font-display: "Source Serif 4", ui-serif, Georgia, serif;
-  --font-body: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Source Serif 4 Variable", ui-serif, Georgia, serif;
+  --font-body: "Hanken Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
 
   --color-ink: #141a23;
   --color-slate: #4a5058;

@@ -1,32 +1,6 @@
 {
-  "haeuser": [
-    { "id": "G-101", "text": "Einfamilienhaus mit Garten, Umkreis 10 km Montabaur, bis € 480.000,-" },
-    { "id": "G-102", "text": "Doppelhaushälfte, Wirges oder Ransbach-Baumbach, bis € 380.000,-" },
-    { "id": "G-103", "text": "Reihenendhaus mit mind. 4 Zimmern, Montabaur oder Wallmerod, bis € 340.000,-" },
-    { "id": "G-104", "text": "Freistehendes Haus mit Einliegerwohnung, Westerwaldkreis, bis € 550.000,-" },
-    { "id": "G-105", "text": "Bungalow, barrierefrei, Montabaur oder Limburg, bis € 420.000,-" },
-    { "id": "G-106", "text": "Fachwerkhaus mit Sanierungsbedarf, Hachenburg oder Umgebung, bis € 250.000,-" },
-    { "id": "G-107", "text": "Landhaus mit Weitblick, Raum Hachenburg / Bad Marienberg, bis € 1.200.000,-" },
-    { "id": "G-108", "text": "Resthof oder Haus mit großem Grundstück für Pferdehaltung, Westerwald, bis € 600.000,-" }
-  ],
-  "eigentumswohnungen": [
-    { "id": "G-201", "text": "3-Zimmer-Wohnung mit Balkon, Montabaur-Zentrum, bis € 280.000,-" },
-    { "id": "G-202", "text": "Altbauwohnung mit Charme, Limburger Altstadt oder Umgebung, bis € 260.000,-" },
-    { "id": "G-203", "text": "Barrierefreie 2-Zimmer-Wohnung mit Aufzug, Montabaur oder Wirges, bis € 220.000,-" },
-    { "id": "G-204", "text": "Penthouse mit Dachterrasse, Koblenz oder Montabaur, bis € 650.000,-" },
-    { "id": "G-205", "text": "Kapitalanlage-Wohnung, vermietet, Westerwaldkreis oder Koblenz, bis € 200.000,-" }
-  ],
-  "grundstuecke": [
-    { "id": "G-301", "text": "Baugrundstück für Einfamilienhaus, Wallmerod oder Selters, bis € 130.000,-" },
-    { "id": "G-302", "text": "Grundstück für Doppelhaus, Umkreis Montabaur, bis € 180.000,-" },
-    { "id": "G-303", "text": "Wiese oder Waldparzelle, Westerwaldkreis, bis € 40.000,-" },
-    { "id": "G-304", "text": "Baugrundstück ab 800 m², Höhr-Grenzhausen oder Ransbach-Baumbach, bis € 150.000,-" }
-  ],
-  "gewerbeSonstige": [
-    { "id": "G-401", "text": "Büro- oder Praxisfläche, ca. 120–180 m², Montabaur-Zentrum, Miete bis € 2.000,-" },
-    { "id": "G-402", "text": "Ladenlokal in Innenstadtlage, Montabaur oder Limburg, Miete auf Anfrage" },
-    { "id": "G-403", "text": "Mehrfamilienhaus als Renditeobjekt, Raum Koblenz / Westerwald, bis € 1.200.000,-" },
-    { "id": "G-404", "text": "Lager-/Hallenfläche mit LKW-Zufahrt, Nähe A3-Anschluss, ca. 400–600 m²" },
-    { "id": "G-405", "text": "Gastronomiefläche mit Außenbereich, Hachenburg oder Montabaur, Kauf oder Pacht" }
-  ]
+  "haeuser": [],
+  "eigentumswohnungen": [],
+  "grundstuecke": [],
+  "gewerbeSonstige": []
 }

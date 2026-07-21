@@ -23,7 +23,7 @@ export const site = {
   hoursNote: "Weitere Termine nach Absprache möglich.",
   tagline:
     "Inhabergeführt aus Montabaur. Wir begleiten Eigentümer im Westerwald, an Rhein, Lahn und in Koblenz — persönlich, ehrlich und langfristig.",
-  googleBusiness: "https://maps.google.com/",
+  googleBusiness: "https://www.google.com/maps/search/?api=1&query=Vorderer+Rebstock+6%2C+56410+Montabaur",
   siteUrl: "https://www.sim-immoservice.de",
   credit: "Webdesign: Chourol Webdesign",
 } as const;
